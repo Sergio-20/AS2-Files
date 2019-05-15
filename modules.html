@@ -1,13 +1,13 @@
-/******************************************/
-/*          AS2 Reserve Form Test         */
-/******************************************/
+<!-------------------------------------------
+             AS2 Reserve Form List
+------------------------------------------->
 
 <!---------------TODO--------------------->
 
 
-/******************************************/
-/*              AS2 Auctions              */
-/******************************************/
+<!-------------------------------------------
+                AS2 Auctions
+------------------------------------------->
 
 {% set table_id = 1027575 %}
 
@@ -38,17 +38,17 @@
 </div>
 
 
-/******************************************/
-/*           AS2 Available Units          */
-/******************************************/
+<!-------------------------------------------
+              AS2 Available Units
+------------------------------------------->
 
 
 <!---------------TODO--------------------->
 
 
-/******************************************/
-/*              AS2 Blog Sidebar          */
-/******************************************/
+<!-------------------------------------------
+              AS2 Blog Sidebar
+------------------------------------------->
 
 <div class="blog-sidebar">
   <div class="bs-subscribe">
@@ -94,9 +94,9 @@
 </div>
 
 
-/******************************************/
-/*              AS2 City List             */
-/******************************************/
+<!-------------------------------------------
+                AS2 City List
+------------------------------------------->
 
 <div class="city-list">
   <div class="cl-overlay-red">
@@ -127,9 +127,9 @@
 
 
 
-/******************************************/
-/*                AS2 Content             */
-/******************************************/
+<!-------------------------------------------
+                AS2 Content
+------------------------------------------->
 
 <div class="as2-content">
   <div class="page_center sm">
@@ -140,9 +140,9 @@
 </div>
 
 
-/******************************************/
-/*            AS2 Content and Form        */
-/******************************************/
+<!-------------------------------------------
+              AS2 Content and Form
+------------------------------------------->
 
 <div class="content-form">
    <div class="page_center md">
@@ -166,365 +166,66 @@
   </div>
 </div>
 
-/******************************************/
-/*           AS2 Dynamic Locations        */
-/******************************************/
-
-<script>
-  function reserveUnit(i) {
-
-    var resForm = $('.reserve-form'),
-        list = $('#units-list');
-
-    if (resForm.hasClass('active')) {
-      resForm.removeClass('active');
-      list.show();
-    } else {
-      resForm.addClass('active');
-      list.hide();
-    }
-  }
-
-  function closeRes(i) {
-    var resForm = $('.reserve-form'),
-        list = $('#units-list');
-
-    if (resForm.hasClass('active')) {
-      resForm.removeClass('active');
-      list.show();
-    } else {
-      resForm.addClass('active');
-      list.hide();
-    }
-  }
-</script>
-
-{% macro reserveForm() %}
-
-  <div class="reserve-form">
-        <div class="form_wrap">
-          <div class="rf-close" onClick="closeRes(this)">&times; Cancel</div>
-          <form id="res-form" action="" method="POST">
-            <div class="rf-info">
-              <div class="rf-info_size">
-                <b>Unit Size:</b> <span></span>
-              </div>
-              <div class="rf-info_rate">
-                <b>Mo. Rate:</b> <span></span>
-              </div>
-              <div class="rf-info_date">
-                <b>Date to Reserve:</b> <span></span>
-              </div>
-            </div>
-            <div class="rf-input">
-              <label for="fname">First Name</label>
-              <input type="text" name="fname" placeholder="first name" required>
-            </div>
-            <div class="rf-input">
-              <label for="lname">Last Name</label>
-              <input type="text" name="lname" placeholder="last name" required>
-            </div>
-            <div class="rf-input">
-              <label for="add1">Street Address</label>
-              <input type="text" name="add1" placeholder="street address" required>
-            </div>
-            <div class="rf-input">
-              <label for="add2">Apartment, Suite, etc. Number</label>
-              <input type="text" name="add2" placeholder="#" required>
-            </div>
-            <div class="flexy">
-              <div class="rf-input f02">
-                <label for="city">City</label>
-                <input type="text" name="city" placeholder="city" required>
-              </div>
-              <div class="rf-input f01">
-                <label for="state">State</label>
-                <select class="form-control" name="state" placeholder="choose a state..." required>
-                    <option value="AL">AL</option>
-                    <option value="AK">AK</option>
-                    <option value="AZ">AZ</option>
-                    <option value="AR">AR</option>
-                    <option value="CA">CA</option>
-                    <option value="CO">CO</option>
-                    <option value="CT">CT</option>
-                    <option value="DE">DE</option>
-                    <option value="DC">DC</option>
-                    <option value="FL">FL</option>
-                    <option value="GA">GA</option>
-                    <option value="HI">HI</option>
-                    <option value="ID">ID</option>
-                    <option value="IL">IL</option>
-                    <option value="IN">IN</option>
-                    <option value="IA">IA</option>
-                    <option value="KS">KS</option>
-                    <option value="KY">KY</option>
-                    <option value="LA">LA</option>
-                    <option value="ME">ME</option>
-                    <option value="MD">MD</option>
-                    <option value="MA">MA</option>
-                    <option value="MI">MI</option>
-                    <option value="MN">MN</option>
-                    <option value="MS">MS</option>
-                    <option value="MO">MO</option>
-                    <option value="MT">MT</option>
-                    <option value="NE">NE</option>
-                    <option value="NV">NV</option>
-                    <option value="NH">NH</option>
-                    <option value="NJ">NJ</option>
-                    <option value="NM">NM</option>
-                    <option value="NY">NY</option>
-                    <option value="NC">NC</option>
-                    <option value="ND">ND</option>
-                    <option value="OH">OH</option>
-                    <option value="OK">OK</option>
-                    <option value="OR">OR</option>
-                    <option value="PA">PA</option>
-                    <option value="RI">RI</option>
-                    <option value="SC">SC</option>
-                    <option value="SD">SD</option>
-                    <option value="TN">TN</option>
-                    <option value="TX">TX</option>
-                    <option value="UT">UT</option>
-                    <option value="VT">VT</option>
-                    <option value="VA">VA</option>
-                    <option value="WA">WA</option>
-                    <option value="WV">WV</option>
-                    <option value="WI">WI</option>
-                    <option value="WY">WY</option>
-                  </select>
-              </div>
-              <div class="rf-input f01">
-                <label for="zip">Zip</label>
-                <input type="num" name="zip" placeholder="zip" required>
-              </div>
-            </div>
-            <div class="rf-input">
-              <label for="phone">Phone</label>
-              <input type="tel" name="phone" placeholder="phone number" required>
-            </div>
-            <div class="rf-input">
-              <label for="email">Email</label>
-              <input type="email" name="email" placeholder="email" required>
-            </div>
-            <div class="rf-payment">
-              <legend>
-              Payment Information
-              </legend>
-              <div class="rf-text">
-                a fee of $6.95 will be applied to your credit card by Uhaul to complete this reservation. This amount will be refunded after successfully leaving a review of our facility with Uhaul.
-              </div>
-              <div class="flexy">
-                <div class="rf-input f03">
-                  <label for="cc">CC Number</label>
-                  <input type="text" name="cc" placeholder="credit card" required>
-                </div>
-                <div class="rf-input f01">
-                  <label for="exp">Exp</label>
-                  <input type="num" name="exp" placeholder="MMYY" required>
-                </div>
-                <div class="rf-input f01">
-                  <label for="csc">CSC</label>
-                  <input type="num" name="exp" placeholder="csc" required>
-                </div>
-              </div>
-              <div class="rf-input f01">
-                <label for="ins">Choose Insurance</label>
-                <select class="ins-select form-control" name="ins">
-                  <option value="">-- Choose insurance --</option>
-                </select>
-              </div>
-              <input type="hidden" name="insurances" value='' />
-              <input type="hidden" name="unitid" value="" />
-              <input type="hidden" name="dates" value='' />
-              <input type="hidden" name="size" value="" />
-              <input type="hidden" name="price" value="" />
-              <div class="rf-submit">
-                <input type="submit" value="Make Reservation">
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-
-{% endmacro %}
-
+<!-------------------------------------------
+            AS2 Dynamic Locations
+------------------------------------------->
 
 <div class="dynamic-locations">
   <div class="page_center md">
-
-    {% if dynamic_page_hubdb_row %}
-
-      <div class="dl-info_wrap flexy">
-        <div class="dl-info">
-          <div class="dl-info_header">
-            Location Information
-          </div>
-          <div class="dl-info_content">
-            <h3>Our Address</h3>
-            <p><i class="fa fa-map-marker" aria-hidden="true"></i>{{ dynamic_page_hubdb_row.street }}<br>{{ dynamic_page_hubdb_row.city }}, {{ dynamic_page_hubdb_row.state }} {{ dynamic_page_hubdb_row.zip }}</p>
-          </div>
-          <div class="dl-info_content">
-            <h3>Contact Us</h3>
-            {% set phone = dynamic_page_hubdb_row.phone|list %}
-            <p><i class="fa fa-phone" aria-hidden="true"></i>
-              <a href="tel:+{{dynamic_page_hubdb_row.phone}}">
-              {%- for x in phone -%}
-              {{x}}{% if loop.index == 1 %} ({% elif loop.index == 4 %}) {% elif loop.index == 7 %}-{% endif %}{%- endfor -%}
-              </a>
-              <br><i class="fa fa-envelope-o" aria-hidden="true"></i>
-              <a href="emailto:{{ dynamic_page_hubdb_row.email }}">{{ dynamic_page_hubdb_row.email }}</a>
-            </p>
-          </div>
-          <div class="dl-info_content">
-            <h3>Our Hours</h3>
-            <div class="dl-hours flexy">
-              <div class="dl-table">
-              <table>
-                <thead><tr><th colspan="2">Office Hours:</th></tr></thead>
-                <tbody>
-                  <tr>
-                    <td>Sunday</td>
-                    <td>9:00 - 6:00</td>
-                  </tr>
-                  <tr>
-                    <td>Monday</td>
-                    <td>9:00 - 6:00</td>
-                  </tr>
-                  <tr>
-                    <td>Tuesday</td>
-                    <td>9:00 - 6:00</td>
-                  </tr>
-                  <tr>
-                    <td>Wednesday</td>
-                    <td>9:00 - 6:00</td>
-                  </tr>
-                  <tr>
-                    <td>Thursday</td>
-                    <td>9:00 - 6:00</td>
-                  </tr>
-                  <tr>
-                    <td>Friday</td>
-                    <td>9:00 - 6:00</td>
-                  </tr>
-                  <tr>
-                    <td>Saturday</td>
-                    <td>9:00 - 6:00</td>
-                  </tr>
-                </tbody>
-              </table>
-             </div>
-             <div class="dl-table">
-              <table>
-                <thead><tr><th colspan="2">Gate Access Hours:</th></tr></thead>
-                <tbody>
-                  <tr>
-                    <td>Sunday</td>
-                    <td>7:00 - 9:00</td>
-                  </tr>
-                  <tr>
-                    <td>Monday</td>
-                    <td>7:00 - 9:00</td>
-                  </tr>
-                  <tr>
-                    <td>Tuesday</td>
-                    <td>7:00 - 9:00</td>
-                  </tr>
-                  <tr>
-                    <td>Wednesday</td>
-                    <td>7:00 - 9:00</td>
-                  </tr>
-                  <tr>
-                    <td>Thursday</td>
-                    <td>7:00 - 9:00</td>
-                  </tr>
-                  <tr>
-                    <td>Friday</td>
-                    <td>7:00 - 9:00</td>
-                  </tr>
-                  <tr>
-                    <td>Saturday</td>
-                    <td>7:00 - 9:00</td>
-                  </tr>
-                </tbody>
-              </table>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="dl-map" data-latlng="{{ dynamic_page_hubdb_row.coordinates.lat }}, {{ dynamic_page_hubdb_row.coordinates.lon }}">
-          <div id="map">
-
-          </div>
-        </div>
-      </div>
-      <div class="available-units">
-        <div class="flexy">
-          <div class="au-sidebar">
-            <div id="au-gallery">
-
-            </div>
-            <div id="au-features">
-              <h3>Features Include:</h3>
-              <ul></ul>
-            </div>
-          </div>
-          <div class="au-units_container">
-            <div class="au-controls">
-              <ul class="flexy">
-                <li class="active">reserve<br>a unit</li>
-                <li>truck<br>rentals</li>
-                <li>trailer<br>rentals</li>
-                <li>order packing<br>supplies</li>
-              </ul>
-            </div>
-            <div class="au-stage">
-              <div class="ua-units">
-                <ul id="units-list" data-entity="{{ dynamic_page_hubdb_row.entity_number }}">
-
-                </ul>
-                {{ reserveForm() }}
-              </div>
-              <div class="au-trucks">
-
-              </div>
-              <div class="au-trailers">
-
-              </div>
-              <div class="au-supples">
-
-              </div>
-            </div>
-
-            <div class="form_wrap">
-              <h2>Request a Unit</h2>
-            <p>Don't see what you are looking for? Use this form to request a specific unit at this location, and we will get in touch.</p>
-              {% form
-                form_to_use="{{ module.form_field.form_id }}"
-                response_response_type="{{ module.form_field.response_type }}"
-                response_message="{{ module.form_field.message }}"
-                response_redirect_id="{{ module.form_field.redirect_id }}"
-                response_redirect_url="{{module.form_field.redirect_url}}"
-                gotowebinar_webinar_key="{{ module.form_field.gotowebinar_webinar_key }}"
-              %}
-            </div>
-          </div>
-        </div>
-      </div>
-    {% elif dynamic_page_hubdb_table_id %}
       <ul>
-        {% for row in hubdb_table_rows(dynamic_page_hubdb_table_id) %}
-          <li><a href="{{ request.path }}/{{ row.hs_path }}">{{ row.hs_name }}</a></li>
-        {% endfor %}
-      </ul>
-    {% endif %}
+          <li><a href="#">#1 | Edmond, OK | American Self Storage</a></li>
 
+          <li><a href="#">#2 | Oklahoma City, OK | American Self Storage</a></li>
+
+          <li><a href="#"> #3 | Oklahoma City, OK | American Self Storage</a></li>
+
+          <li><a href="#">#4 | Midwest City, OK | American Self Storage</a></li>
+
+          <li><a href="#">#5 | Norman, OK | American Self Storage</a></li>
+
+          <li><a href="#">#6 | Norman, OK | American Self Storage</a></li>
+
+          <li><a href="#">#7 | Oklahoma City, OK | American Self Storage</a></li>
+
+          <li><a href="#">#8 | Oklahoma City, OK | American Self Storage</a></li>
+
+          <li><a href="#">#9 | Oklahoma City, OK | American Self Storage</a></li>
+
+          <li><a href="#">#10 | Bethany, OK | American Self Storage</a></li>
+
+          <li><a href="#">#11 | Oklahoma City, OK | American Self Storage</a></li>
+
+          <li><a href="#">#12 | Oklahoma City, OK | American Self Storage</a></li>
+
+          <li><a href="#">#13 | Lawton, OK | American Self Storage</a></li>
+
+          <li><a href="#">#14 | Wichita, KS | American Self Storage</a></li>
+
+          <li><a href="#">#15 | Shawnee, OK | American Self Storage</a></li>
+
+          <li><a href="#">#16 | Shawnee, OK | American Self Storage</a></li>
+
+          <li><a href="#">#17 | Tecumseh, OK | American Self Storage</a></li>
+
+          <li><a href="#">#18 | Shawnee, OK | American Self Storage</a></li>
+
+          <li><a href="#">#19 | Yukon, OK | American Self Storage</a></li>
+
+          <li><a href="#">#20 | Moore, OK | American Self Storage</a></li>
+
+          <li><a href="#">#21 | Oklahoma City, OK | American Self Storage</a></li>
+
+          <li><a href="#">#22 | Oklahoma City, OK | American Self Storage</a></li>
+
+          <li><a href="#">#23 | Oklahoma City, OK | American Self Storage</a></li>
+      </ul>
   </div>
 </div>
 
 
-/******************************************/
-/*              AS2 Footer                */
-/******************************************/
+<!-------------------------------------------
+                AS2 Footer
+------------------------------------------->
 
 
 <footer class="as2-footer">
@@ -577,9 +278,9 @@
 </footer>
 
 
-/******************************************/
-/*              AS2 Header                */
-/******************************************/
+<!-------------------------------------------
+                AS2 Header
+------------------------------------------->
 
 <header class="as2-header">
   <div class="ah-pre_header">
@@ -628,9 +329,9 @@
   </div>
 </header>
 
-/******************************************/
-/*              AS2 Home Banner           */
-/******************************************/
+<!-------------------------------------------
+                AS2 Home Banner
+------------------------------------------->
 
 <div class="as2-banner" style="background: url(https://www.americanselfstorageok.com/hubfs/Site_Assets_2017/home_banner_bg2-compressor.jpg) center center no-repeat; background-size: cover;">
   <div class="page_center sm">
@@ -672,29 +373,23 @@
 </div>
 
 
-/******************************************/
-/*              AS2 Inner Banner          */
-/******************************************/
+<!-------------------------------------------
+              AS2 Inner Banner
+------------------------------------------->
 
 <div class="inner-banner" style="background: url(https://www.americanselfstorageok.com/hubfs/Site_Assets_2017/home_banner_bg2-compressor.jpg) center center no-repeat; background-size: cover;">
 
 </div>
 <div class="h1-container">
-  {% if dynamic_page_hubdb_row %}
-  <h1>{{ dynamic_page_hubdb_row.name }}</h1>
-  {% elif group %}
-    {% if is_listing_view %}
-  <h1>{{ group.public_title }}</h1>
-    {% endif %}
-  {% else %}
-  <h1>{{ module.h1_text }}</h1>
-  {% endif %}
+
+  <h1>We Have 23 Locations</h1>
+
 </div>
 
 
-/******************************************/
-/*           AS2 Locations By City        */
-/******************************************/
+<!-------------------------------------------
+              AS2 Locations By City
+------------------------------------------->
 
 
 {% set locations = hubdb_table_rows(1027575) %}
@@ -733,9 +428,9 @@
 </div>
 
 
-/******************************************/
-/*      AS2 Locations Map and Filter      */
-/******************************************/
+<!-------------------------------------------
+          AS2 Locations Map and Filter
+------------------------------------------->
 
 {% set locations = hubdb_table_rows(1027575) %}
 
@@ -799,9 +494,9 @@
 </div>
 
 
-/******************************************/
-/*     AS2 Rentals and Supply Providers   */
-/******************************************/
+<!-------------------------------------------
+      AS2 Rentals and Supply Providers
+------------------------------------------->
 
 {% set locations = hubdb_table_rows(1027575) %}
 {% set choice = module.for_list_providers %}
@@ -867,9 +562,9 @@
 </div>
 
 
-/******************************************/
-/*         AS2 Reserve Form Tester        */
-/******************************************/
+<!-------------------------------------------
+            AS2 Reserve Form Tester
+------------------------------------------->
 
 <div class="reserve-form">
   <div class="form_wrap">
@@ -1016,9 +711,9 @@
 </div>
 
 
-/******************************************/
-/*              AS2 Reviews               */
-/******************************************/
+<!-------------------------------------------
+                AS2 Reviews
+------------------------------------------->
 
 
 <div class="as2-reviews">
@@ -1030,9 +725,9 @@
 </div>
 
 
-/******************************************/
-/*              AS2 RSS Feed              */
-/******************************************/
+<!-------------------------------------------
+                AS2 RSS Feed
+------------------------------------------->
 
 
 <div id="hs_cos_wrapper_widget_1549859344924" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
@@ -1137,9 +832,9 @@
 </div>
 
 
-/******************************************/
-/*              AS2 Size Guide            */
-/******************************************/
+<!-------------------------------------------
+                AS2 Size Guide
+------------------------------------------->
 
 
 <a href="#" class="AS2-btn AS2-btn_red"><span class="sizeGuide">Size Guide</span></a>
@@ -1202,9 +897,9 @@
 </div>
 
 
-/******************************************/
-/*              AS2 Split Section         */
-/******************************************/
+<!-------------------------------------------
+                AS2 Split Section
+------------------------------------------->
 
 <div class="split-section">
   <div class="ss-container flexy">
