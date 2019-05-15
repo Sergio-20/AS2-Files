@@ -148,7 +148,13 @@
    <div class="page_center md">
       <div class="cf-wrap flexy">
         <div class="cf-content f06">
-          {% inline_rich_text field="content" value="{{ module.content }}" %}
+          <div id="hs_cos_wrapper_widget_1553502090610_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_inline_rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="inline_rich_text" data-hs-cos-field="content">
+            <h2><img src="https://cdn2.hubspot.net/hub/3266276/hubfs/Site_Assets_2017/american_self_storage_logo.png?width=411&amp;name=american_self_storage_logo.png" alt="american_self_storage_logo" width="411" style="width: 411px; margin: 0px auto 30px; display: block;"></h2>
+            <h2 style="color: #032459; font-size: 3.8rem; font-weight: bold; text-align: center;">American Self Storage Corporate</h2>
+            <p>American Self-Storage is an Oklahoma owned company serving Oklahoma and Wichita, KS with 23 facilities, and over 30 years of experience. The Company offers a large selection of affordable, secure storage for your personal storage, boat and RV storage and business storage solutions. At American Self Storage we know that our existence is possible because of you, our customer, and we want to make sure that you have the best customer experience possible when it comes to storing your belongings. In addition to storage we also provide packing supplies and U-Haul truck rentals. The Company prides itself on maintaining great facilities and employing the best managers in the industry. We look forward to satisfying your self-storage needs.</p>
+            <h2>Contact Information</h2>
+            <p>info@americanselfstorageok.com</p>
+            <a class="AS2-btn AS2-btn_red" href="mailto:info@americanselfstorageok.com">Email Us</a></div>
         </div>
         <div class="cf-form">
           <div class="form_wrap f04">
@@ -444,119 +450,458 @@
         <form>
         <div class="flexy">
           <div class="ls-search">
-            <input id="autocomplete" type="search" placeholder="zip code, city, or state..." required>
-            <input type="hidden" id="city2" name="city2" />
-            <input type="hidden" id="cityLat" name="cityLat" />
-            <input type="hidden" id="cityLng" name="cityLng" />
+            <input id="autocomplete" type="search" placeholder="zip code, city, or state..." required="" autocomplete="off">
+            <input type="hidden" id="city2" name="city2">
+            <input type="hidden" id="cityLat" name="cityLat">
+            <input type="hidden" id="cityLng" name="cityLng">
           </div>
           <div class="ls-submit">
-            <input type="button" class="AS2-btn AS2-btn_red" value="Go"  onClick="direct();">
+            <input type="button" class="AS2-btn AS2-btn_red" value="Go" onclick="direct();">
           </div>
       	</div>
       </form>
       </div>
-      {% for place in locations %}
-        {#{{ place.name }}<br>
-        {{ place.coordinates }}<br>
-        {{ place.street }}<br>
-        {{ place.city }}<br>
-        {{ place.state }}<br>
-        {{ place.zip }}<br>
-        {{ place.phone }}<br>
-        {{ place.image }}<br><br>#}
 
-        <div class="loc_{{loop.index}} mf-item flexy" data-latlng="{{ place.coordinates.lat }},{{ place.coordinates.lon }}" data-matrix="hello">
+
+
+        <div class="loc_1 mf-item flexy" data-latlng="35.63996,-97.48462" data-matrix="hello">
           <div class="mf-item_img">
-            <img src="{{ resize_image_url(place.image.url, 0, 0, 160) }}" alt="{{ place.name }} | {{ place.street }}, {{place.city}}, {{city.state}}">
+            <img src="https://cdn2.hubspot.net/hub/3266276/hubfs/1-11.jpg?length=160&amp;name=1-11.jpg" alt="American Self Storage #1 | 1323 South Broadway, Edmond, ">
           </div>
           <div class="mf-item_info">
-            <h2>{{ place.name }}</h2>
+            <h2>American Self Storage #1</h2>
             <p>
-              {{ place.street }}<br>
-              {{ place.city }}, {{ place.state }} {{ place.zip }}
+              1323 South Broadway<br>
+              Edmond, OK 73034
             </p>
-            {% set phone = place.phone|list %}
-            <a href="tel:+1{{ place.phone }}">
-              {%- for x in phone -%}
-                {{x}}{% if loop.index == 1 %} ({% elif loop.index == 4 %}) {% elif loop.index == 7 %}-{% endif %}
-              {%- endfor -%}
-            </a>
-            <a href="/locations/{{ place.store_number }}">Reserve a Unit</a>
+
+            <a href="tel:+114053401905">1 (405) 340-1905</a>
+            <a href="#">Reserve a Unit</a>
           </div>
         </div>
 
-      {% endfor %}
+
+
+
+        <div class="loc_2 mf-item flexy" data-latlng="35.61069,-97.51659" data-matrix="hello">
+          <div class="mf-item_img">
+            <img src="https://cdn2.hubspot.net/hub/3266276/hubfs/2-1.jpg?length=160&amp;name=2-1.jpg" alt="American Self Storage #2 | 201 West Memorial Road, Oklahoma City, ">
+          </div>
+          <div class="mf-item_info">
+            <h2>American Self Storage #2</h2>
+            <p>
+              201 West Memorial Road<br>
+              Oklahoma City, OK 73114
+            </p>
+
+            <a href="tel:+114057511006">1 (405) 751-1006</a>
+            <a href="#">Reserve a Unit</a>
+          </div>
+        </div>
+
+
+
+
+        <div class="loc_3 mf-item flexy" data-latlng="35.51603,-97.511" data-matrix="hello">
+          <div class="mf-item_img">
+            <img src="https://cdn2.hubspot.net/hub/3266276/hubfs/1.jpg?length=160&amp;name=1.jpg" alt="American Self Storage #3 | 4400 North Santa Fe, Oklahoma City, ">
+          </div>
+          <div class="mf-item_info">
+            <h2>American Self Storage #3</h2>
+            <p>
+              4400 North Santa Fe<br>
+              Oklahoma City, OK 73118
+            </p>
+
+            <a href="tel:+114055286772">1 (405) 528-6772</a>
+            <a href="#">Reserve a Unit</a>
+          </div>
+        </div>
+
+
+
+
+        <div class="loc_4 mf-item flexy" data-latlng="35.48187,-97.40753" data-matrix="hello">
+          <div class="mf-item_img">
+            <img src="https://cdn2.hubspot.net/hub/3266276/hubfs/6.jpg?length=160&amp;name=6.jpg" alt="American Self Storage #4 | 1301 North Air Depot Blvd., Midwest City, ">
+          </div>
+          <div class="mf-item_info">
+            <h2>American Self Storage #4</h2>
+            <p>
+              1301 North Air Depot Blvd.<br>
+              Midwest City, OK 73110
+            </p>
+
+            <a href="tel:+114057334003">1 (405) 733-4003</a>
+            <a href="#">Reserve a Unit</a>
+          </div>
+        </div>
+
+
+
+
+        <div class="loc_5 mf-item flexy" data-latlng="35.21926,-97.40933" data-matrix="hello">
+          <div class="mf-item_img">
+            <img src="https://cdn2.hubspot.net/hub/3266276/hubfs/3.jpg?length=160&amp;name=3.jpg" alt="American Self Storage #5 | 2111 East Alameda, Norman, ">
+          </div>
+          <div class="mf-item_info">
+            <h2>American Self Storage #5</h2>
+            <p>
+              2111 East Alameda<br>
+              Norman, OK 73071
+            </p>
+
+            <a href="tel:+114053642122">1 (405) 364-2122</a>
+            <a href="#">Reserve a Unit</a>
+          </div>
+        </div>
+
+
+
+
+        <div class="loc_6 mf-item flexy" data-latlng="35.22457,-97.47784" data-matrix="hello">
+          <div class="mf-item_img">
+            <img src="https://cdn2.hubspot.net/hub/3266276/hubfs/1-1.jpg?length=160&amp;name=1-1.jpg" alt="American Self Storage #6 | 510 24th Ave. Nw, Norman, ">
+          </div>
+          <div class="mf-item_info">
+            <h2>American Self Storage #6</h2>
+            <p>
+              510 24th Ave. Nw<br>
+              Norman, OK 73069
+            </p>
+
+            <a href="tel:+114053644807">1 (405) 364-4807</a>
+            <a href="#">Reserve a Unit</a>
+          </div>
+        </div>
+
+
+
+
+        <div class="loc_7 mf-item flexy" data-latlng="35.37546,-97.52727" data-matrix="hello">
+          <div class="mf-item_img">
+            <img src="https://cdn2.hubspot.net/hub/3266276/hubfs/1-2.jpg?length=160&amp;name=1-2.jpg" alt="American Self Storage #7 | 736 Southwest 89th Street, Oklahoma City, ">
+          </div>
+          <div class="mf-item_info">
+            <h2>American Self Storage #7</h2>
+            <p>
+              736 Southwest 89th Street<br>
+              Oklahoma City, OK 73139
+            </p>
+
+            <a href="tel:+114056913670">1 (405) 691-3670</a>
+            <a href="#">Reserve a Unit</a>
+          </div>
+        </div>
+
+
+
+
+        <div class="loc_8 mf-item flexy" data-latlng="35.41662,-97.4872" data-matrix="hello">
+          <div class="mf-item_img">
+            <img src="https://cdn2.hubspot.net/hub/3266276/hubfs/1-3.jpg?length=160&amp;name=1-3.jpg" alt="American Self Storage #8 | 4900 South Hattie, Oklahoma City, ">
+          </div>
+          <div class="mf-item_info">
+            <h2>American Self Storage #8</h2>
+            <p>
+              4900 South Hattie<br>
+              Oklahoma City, OK 73129
+            </p>
+
+            <a href="tel:+114056706553">1 (405) 670-6553</a>
+            <a href="#">Reserve a Unit</a>
+          </div>
+        </div>
+
+
+
+
+        <div class="loc_9 mf-item flexy" data-latlng="35.4774,-97.60253" data-matrix="hello">
+          <div class="mf-item_img">
+            <img src="https://cdn2.hubspot.net/hub/3266276/hubfs/3-1.jpg?length=160&amp;name=3-1.jpg" alt="American Self Storage #9 | 929 North Meridian, Oklahoma City, ">
+          </div>
+          <div class="mf-item_info">
+            <h2>American Self Storage #9</h2>
+            <p>
+              929 North Meridian<br>
+              Oklahoma City, OK 73107
+            </p>
+
+            <a href="tel:+114059428227">1 (405) 942-8227</a>
+            <a href="#">Reserve a Unit</a>
+          </div>
+        </div>
+
+
+
+
+        <div class="loc_10 mf-item flexy" data-latlng="35.53559,-97.63374" data-matrix="hello">
+          <div class="mf-item_img">
+            <img src="https://cdn2.hubspot.net/hub/3266276/hubfs/1-4.jpg?length=160&amp;name=1-4.jpg" alt="American Self Storage #10 | 6800 Northwest 63rd Street, Bethany, ">
+          </div>
+          <div class="mf-item_info">
+            <h2>American Self Storage #10</h2>
+            <p>
+              6800 Northwest 63rd Street<br>
+              Bethany, OK 73008
+            </p>
+
+            <a href="tel:+114057210764">1 (405) 721-0764</a>
+            <a href="#">Reserve a Unit</a>
+          </div>
+        </div>
+
+
+
+
+        <div class="loc_11 mf-item flexy" data-latlng="35.58121,-97.65289" data-matrix="hello">
+          <div class="mf-item_img">
+            <img src="https://cdn2.hubspot.net/hub/3266276/hubfs/1-5.jpg?length=160&amp;name=1-5.jpg" alt="American Self Storage #11 | 7801 West Hefner Rd., Oklahoma City, ">
+          </div>
+          <div class="mf-item_info">
+            <h2>American Self Storage #11</h2>
+            <p>
+              7801 West Hefner Rd.<br>
+              Oklahoma City, OK 73162
+            </p>
+
+            <a href="tel:+114057228709">1 (405) 722-8709</a>
+            <a href="#">Reserve a Unit</a>
+          </div>
+        </div>
+
+
+
+
+        <div class="loc_12 mf-item flexy" data-latlng="35.60568,-97.63756" data-matrix="hello">
+          <div class="mf-item_img">
+            <img src="https://cdn2.hubspot.net/hub/3266276/hubfs/2-2.jpg?length=160&amp;name=2-2.jpg" alt="American Self Storage #12 | 13330 North Rockwell Avenue, Oklahoma City, ">
+          </div>
+          <div class="mf-item_info">
+            <h2>American Self Storage #12</h2>
+            <p>
+              13330 North Rockwell Avenue<br>
+              Oklahoma City, OK 73142
+            </p>
+
+            <a href="tel:+114057213579">1 (405) 721-3579</a>
+            <a href="#">Reserve a Unit</a>
+          </div>
+        </div>
+
+
+
+
+        <div class="loc_13 mf-item flexy" data-latlng="34.594494,-98.42613" data-matrix="hello">
+          <div class="mf-item_img">
+            <img src="https://cdn2.hubspot.net/hub/3266276/hubfs/2-3.jpg?length=160&amp;name=2-3.jpg" alt="American Self Storage #13 | 2411 Southwest Lee Blvd., Lawton, ">
+          </div>
+          <div class="mf-item_info">
+            <h2>American Self Storage #13</h2>
+            <p>
+              2411 Southwest Lee Blvd.<br>
+              Lawton, OK 73505
+            </p>
+
+            <a href="tel:+115802486615">1 (580) 248-6615</a>
+            <a href="#">Reserve a Unit</a>
+          </div>
+        </div>
+
+
+
+
+        <div class="loc_14 mf-item flexy" data-latlng="37.74575,-97.30032" data-matrix="hello">
+          <div class="mf-item_img">
+            <img src="https://cdn2.hubspot.net/hub/3266276/hubfs/1-6.jpg?length=160&amp;name=1-6.jpg" alt="American Self Storage #14 | 3401 Hillside, Wichita, ">
+          </div>
+          <div class="mf-item_info">
+            <h2>American Self Storage #14</h2>
+            <p>
+              3401 Hillside<br>
+              Wichita, KS 67219
+            </p>
+
+            <a href="tel:+113168381365">1 (316) 838-1365</a>
+            <a href="#">Reserve a Unit</a>
+          </div>
+        </div>
+
+
+
+
+        <div class="loc_15 mf-item flexy" data-latlng="35.37627,-96.98601" data-matrix="hello">
+          <div class="mf-item_img">
+            <img src="https://cdn2.hubspot.net/hub/3266276/hubfs/2-4.jpg?length=160&amp;name=2-4.jpg" alt="American Self Storage #15 | 37803 45th Street, Shawnee, ">
+          </div>
+          <div class="mf-item_info">
+            <h2>American Self Storage #15</h2>
+            <p>
+              37803 45th Street<br>
+              Shawnee, OK 74804
+            </p>
+
+            <a href="tel:+114052756401">1 (405) 275-6401</a>
+            <a href="#">Reserve a Unit</a>
+          </div>
+        </div>
+
+
+
+
+        <div class="loc_16 mf-item flexy" data-latlng="35.37093,-96.91194" data-matrix="hello">
+          <div class="mf-item_img">
+            <img src="https://cdn2.hubspot.net/hub/3266276/hubfs/2-5.jpg?length=160&amp;name=2-5.jpg" alt="American Self Storage #16 | 4131 North Harrison, Shawnee, ">
+          </div>
+          <div class="mf-item_info">
+            <h2>American Self Storage #16</h2>
+            <p>
+              4131 North Harrison<br>
+              Shawnee, OK 74804
+            </p>
+
+            <a href="tel:+114052758709">1 (405) 275-8709</a>
+            <a href="#">Reserve a Unit</a>
+          </div>
+        </div>
+
+
+
+
+        <div class="loc_17 mf-item flexy" data-latlng="35.27961,-96.93061" data-matrix="hello">
+          <div class="mf-item_img">
+            <img src="https://cdn2.hubspot.net/hub/3266276/hubfs/1-7.jpg?length=160&amp;name=1-7.jpg" alt="American Self Storage #17 | 19702 Gordon Cooper Drive, Tecumseh, ">
+          </div>
+          <div class="mf-item_info">
+            <h2>American Self Storage #17</h2>
+            <p>
+              19702 Gordon Cooper Drive<br>
+              Tecumseh, OK 74873
+            </p>
+
+            <a href="tel:+114052759687">1 (405) 275-9687</a>
+            <a href="#">Reserve a Unit</a>
+          </div>
+        </div>
+
+
+
+
+        <div class="loc_18 mf-item flexy" data-latlng="35.371147,-96.92624" data-matrix="hello">
+          <div class="mf-item_img">
+            <img src="https://cdn2.hubspot.net/hub/3266276/hubfs/1-8.jpg?length=160&amp;name=1-8.jpg" alt="American Self Storage #18 | 25 Ken Del Drive, Shawnee, ">
+          </div>
+          <div class="mf-item_info">
+            <h2>American Self Storage #18</h2>
+            <p>
+              25 Ken Del Drive<br>
+              Shawnee, OK 74804
+            </p>
+
+            <a href="tel:+114052752022">1 (405) 275-2022</a>
+            <a href="#">Reserve a Unit</a>
+          </div>
+        </div>
+
+
+
+
+        <div class="loc_19 mf-item flexy" data-latlng="35.49924,-97.7349" data-matrix="hello">
+          <div class="mf-item_img">
+            <img src="https://cdn2.hubspot.net/hub/3266276/hubfs/3-2.jpg?length=160&amp;name=3-2.jpg" alt="American Self Storage #19 | 750 South Ranchwood Blvd., Yukon, ">
+          </div>
+          <div class="mf-item_info">
+            <h2>American Self Storage #19</h2>
+            <p>
+              750 South Ranchwood Blvd.<br>
+              Yukon, OK 73099
+            </p>
+
+            <a href="tel:+114053501511">1 (405) 350-1511</a>
+            <a href="#">Reserve a Unit</a>
+          </div>
+        </div>
+
+
+
+
+        <div class="loc_20 mf-item flexy" data-latlng="35.32205,-97.48343" data-matrix="hello">
+          <div class="mf-item_img">
+            <img src="https://cdn2.hubspot.net/hub/3266276/hubfs/1-10.jpg?length=160&amp;name=1-10.jpg" alt="American Self Storage #20 | 1701 Tower Drive, Moore, ">
+          </div>
+          <div class="mf-item_info">
+            <h2>American Self Storage #20</h2>
+            <p>
+              1701 Tower Drive<br>
+              Moore, OK 73160
+            </p>
+
+            <a href="tel:+114058957204">1 (405) 895-7204</a>
+            <a href="#">Reserve a Unit</a>
+          </div>
+        </div>
+
+
+
+
+        <div class="loc_21 mf-item flexy" data-latlng="35.39299,-97.53838" data-matrix="hello">
+          <div class="mf-item_img">
+            <img src="https://cdn2.hubspot.net/hub/3266276/hubfs/2-6.jpg?length=160&amp;name=2-6.jpg" alt="American Self Storage #21 | 1255 W I-240 Service Road, Oklahoma City, ">
+          </div>
+          <div class="mf-item_info">
+            <h2>American Self Storage #21</h2>
+            <p>
+              1255 W I-240 Service Road<br>
+              Oklahoma City, OK 73139
+            </p>
+
+            <a href="tel:+114056289000">1 (405) 628-9000</a>
+            <a href="#">Reserve a Unit</a>
+          </div>
+        </div>
+
+
+
+
+        <div class="loc_22 mf-item flexy" data-latlng="35.45294,-97.68998" data-matrix="hello">
+          <div class="mf-item_img">
+            <img src="https://cdn2.hubspot.net/hub/3266276/hubfs/5.jpg?length=160&amp;name=5.jpg" alt="American Self Storage #22 | 1221 S. Morgan Rd, Oklahoma City, ">
+          </div>
+          <div class="mf-item_info">
+            <h2>American Self Storage #22</h2>
+            <p>
+              1221 S. Morgan Rd<br>
+              Oklahoma City, OK 73128
+            </p>
+
+            <a href="tel:+114053248900">1 (405) 324-8900</a>
+            <a href="#">Reserve a Unit</a>
+          </div>
+        </div>
+
+
+
+
+        <div class="loc_23 mf-item flexy" data-latlng="35.60771,-97.50281" data-matrix="hello">
+          <div class="mf-item_img">
+            <img src="https://cdn2.hubspot.net/hub/3266276/hubfs/2-7.jpg?length=160&amp;name=2-7.jpg" alt="American Self Storage #23 | 13524 Railway Dr #1, Oklahoma City, ">
+          </div>
+          <div class="mf-item_info">
+            <h2>American Self Storage #23</h2>
+            <p>
+              13524 Railway Dr #1<br>
+              Oklahoma City, OK 73114
+            </p>
+
+            <a href="tel:+114055501807">1 (405) 550-1807</a>
+            <a href="#">Reserve a Unit</a>
+          </div>
+        </div>
+
+
     </div>
     <div id="mf-map" class="mf-map">
         <div id="map"></div>
-    </div>
-  </div>
-</div>
-
-
-<!-------------------------------------------
-      AS2 Rentals and Supply Providers
-------------------------------------------->
-
-{% set locations = hubdb_table_rows(1027575) %}
-{% set choice = module.for_list_providers %}
-
-{% macro mixList(i) %}
-  {% for item in i|groupby('city') %}
-    <h3>{{ item.grouper }}</h3>
-    <div class="flexy fl-wrap_wrap">
-      {% for item2 in item.list %}
-        {% if choice == "trucks" %}
-          {% if item2.truck_rental_url %}
-            {{ markup(item2) }}
-          {% endif %}
-        {% elif choice == "trailers" %}
-          {% if item2.trailer_rental_url %}
-            {{ markup(item2) }}
-          {% endif %}
-        {% elif choice == "packing_supplies" %}
-          {% if item2.packing_supplies_url %}
-            {{ markup(item2) }}
-          {% endif %}
-        {% endif %}
-      {% endfor %}
-    </div>
-  {% endfor %}
-{% endmacro %}
-
-{% macro markup(i) %}
-    <div class="rs-item">
-      <h4>{{ i.name }}</h4>
-      <p>{{ i.street }}<br> {{ i.city }}, {{ i.state }} {{ i.zip }}</p>
-      {% set phone = i.phone|list %}
-      <p><a href="tel:+1{{ place.phone }}">
-              {%- for x in phone -%}
-                {{x}}{% if loop.index == 1 %} ({% elif loop.index == 4 %}) {% elif loop.index == 7 %}-{% endif %}
-              {%- endfor -%}
-            </a></p>
-      <a class="AS2-btn AS2-btn_red" target="_blank" href="{% if choice == 'trucks' %}Rent a Truck
-                                                      {% elif choice == 'trailers' %}
-                                                        Rent a trailer
-                                                      {% elif choice == 'packing_supplies' %}
-                                                        {{ item.packing_supplies_url }}
-                                                     {% endif %}">
-          {% if choice == 'trucks' %}
-            Rent a Truck
-          {% elif choice == 'trailers' %}
-            Rent a Trailer
-          {% elif choice == 'packing_supplies' %}
-            Order Packing Supplies
-          {% endif %}
-      </a>
-    </div>
-{% endmacro %}
-
-<div class="rentals-supplies">
-  <div class="page_center lg">
-    <div class="rs-grid">
-
-      {{ mixList(locations) }}
-
     </div>
   </div>
 </div>
