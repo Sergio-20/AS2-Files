@@ -1,156 +1,98 @@
 /******************************************/
-/*              AS2 Header                */
+/*          AS2 Reserve Form Test         */
 /******************************************/
 
-<header class="as2-header">
-  <div class="ah-pre_header">
-    <div class="page_center lg flexy">
-			<div class="ah-socials">
-        <ul>
-          <li><img style="" src="https://www.americanselfstorageok.com/hubfs/Site_Assets_2017/uhaul_affiliate.png" alt=""></li>
-          <li><a target="_blank" href="https://www.facebook.com/AmericanSelfStorageOK"><!-- Facebook Square -->
-								<svg aria-labelledby="facebook-icon" role="img" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg"><title id="facebook-icon">Facebook icon</title><path class="tm_facebook" d="M0,0v35h18.6V21.5h-4.6V16h4.6v-4.6c0-3.4,2.7-6.1,6.1-6.1h4.8v5h-3.4c-1.1,0-1.9,0.9-1.9,1.9V16h5.3l-0.7,5.5h-4.5V35H35V0H0z M0,0"/></svg></a></li>
-          <!--li><a target="_blank" href=""><!-- Google Square ->
-								<svg aria-labelledby="google-icon" role="img" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg"><title id="google-icon">Google icon</title><g><path class="tm_google" d="M0,0v35h35V0H0z M20.4,19c-0.6,3.9-3.5,6.2-7.3,6.2c-4.3,0-7.7-3.5-7.7-7.7c0-4.3,3.5-7.7,7.7-7.7c2.1,0,3.9,0.7,5.2,2L16,13.9c-0.8-0.8-1.8-1.2-3-1.2c-2.5,0-4.5,2.1-4.5,4.6c0,2.5,2,4.6,4.5,4.6c2.1,0,3.7-1,4.2-3.1h-4.2v-3.1h7.3c0.1,0.5,0.1,1,0.1,1.6C20.5,18,20.5,18.5,20.4,19L20.4,19z M29.7,18H27v2.7H25V18h-2.7v-1.9H25v-2.7H27v2.7h2.7V18z M29.7,18"/></g></svg></a></li-->
-        </ul>
-      </div>
-      <div class="ah-access">
-        <ul>
-          <li>{% cta guid="{{ module.cta_2 }}" %}</li>
-          <li>{% cta guid="{{ module.cta_1 }}" %}</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="ah-main_header">
-    <div class="page_center lg flexy fl-vt_center fl-hz_center">
-			<div class="ah-logo_wrap">
-        <a href="/">
-          <img src="https://www.americanselfstorageok.com/hubfs/Site_Assets_2017/american_self_storage_logo.png" alt="">
-        </a>
-      </div>
-      <div class="ah-mob_trigger">
-        <button class="hamburger hamburger--3dxy" type="button">
-          <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-          </span>
-        </button>
-      </div>
-      <div class="ah-nav_wrap">
-        {% menu id="{{ module.navigation }}" %}
-      </div>
-    </div>
-  </div>
-</header>
-
-/******************************************/
-/*              AS2 Home Banner           */
-/******************************************/
-
-<div class="as2-banner" style="background: url(https://www.americanselfstorageok.com/hubfs/Site_Assets_2017/home_banner_bg2-compressor.jpg) center center no-repeat; background-size: cover;">
-  <div class="page_center sm">
-    <div class="ab-content">
-      <div class="square_float">
-        <div class="square">
-          <div class="square2">
-            Home of the<br>
-            <strong><big>12 mo. Rate</big></strong><br>
-            Guarantee!
-          </div>
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="120px" height="120px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
-            <g>
-              <polygon fill="#EB2A3D" points="25,47 22.4,49.6 20.5,46.5 17.4,48.5 16.1,45.1 12.7,46.4 12.1,42.8 8.5,43.4 8.7,39.7 5.1,39.5 6.1,36 2.5,35.1 4.2,31.8 0.9,30.1 3.3,27.3 0.4,25 3.3,22.7 0.9,19.9 4.2,18.2 2.5,14.9 6.1,14 5.1,10.5 8.7,10.3 8.5,6.6 12.1,7.2 12.7,3.6 16.1,4.9 17.4,1.5 20.5,3.5 22.4,0.4 25,3 27.6,0.4 29.5,3.5 32.6,1.5 33.9,4.9 37.3,3.6 37.9,7.2 41.5,6.6 41.3,10.3 44.9,10.5 43.9,14 47.5,14.9 45.8,18.2 49.1,19.9 46.7,22.7 49.6,25 46.7,27.3 49.1,30.1 45.8,31.8 47.5,35.1 43.9,36 44.9,39.5 41.3,39.7 41.5,43.4 37.9,42.8 37.3,46.4 33.9,45.1 32.6,48.5 29.5,46.5 27.6,49.6"
-                       />
-              <path fill="#1C3664" d="M27.529 0.798l1.669 2.615l0.273 0.428l0.424-0.28l2.583-1.706l1.093 2.907l0.178 0.475l0.473-0.185 L37.1 3.923l0.468 3.075l0.076 0.5l0.499-0.083l3.052-0.503l-0.179 3.107l-0.029 0.504l0.505 0.024l3.088 0.146l-0.816 3 l-0.132 0.486l0.486 0.128l2.993 0.79l-1.421 2.766l-0.23 0.448l0.449 0.227l2.765 1.398l-1.96 2.408l-0.317 0.39l0.392 0.3 L49.203 25l-2.416 1.944l-0.392 0.315l0.317 0.39l1.961 2.41l-2.766 1.399l-0.449 0.228l0.23 0.447l1.42 2.766l-2.991 0.8 l-0.488 0.128l0.133 0.486l0.817 3.003l-3.089 0.147l-0.505 0.023l0.029 0.504l0.179 3.104l-3.052-0.501l-0.499-0.082l-0.076 0.5 L37.1 46.074l-2.878-1.128l-0.473-0.185l-0.178 0.475l-1.093 2.909l-2.583-1.706l-0.424-0.28l-0.273 0.428l-1.669 2.6 l-2.173-2.208L25 46.632l-0.356 0.362l-2.173 2.208l-1.668-2.614l-0.273-0.429l-0.424 0.28l-2.583 1.706l-1.092-2.909l-0.178-0.475 l-0.473 0.185L12.9 46.075l-0.468-3.073l-0.076-0.5l-0.499 0.082l-3.05 0.501l0.177-3.104l0.029-0.504l-0.504-0.023L5.42 39.3 l0.818-3.002l0.132-0.487l-0.487-0.128l-2.992-0.789l1.419-2.766l0.229-0.447l-0.449-0.228L1.327 30.06l1.961-2.41l0.317-0.39 l-0.392-0.315L0.797 25l2.416-1.947l0.392-0.315l-0.317-0.39L1.327 19.94l2.764-1.398l0.449-0.227L4.31 17.867l-1.419-2.767 l2.992-0.79l0.487-0.128l-0.132-0.486L5.42 10.694l3.088-0.146l0.504-0.024l-0.029-0.504L8.807 6.913l3.05 0.503l0.5 0.1 l0.076-0.5L12.9 3.923l2.878 1.128l0.472 0.185l0.179-0.475l1.092-2.907l2.583 1.706l0.424 0.28l0.273-0.428l1.668-2.615 l2.173 2.208L25 3.368l0.356-0.362L27.529 0.8 M27.613 0L25 2.655L22.386 0L20.38 3.144l-3.106-2.051l-1.313 3.494L12.5 3.2 l-0.562 3.693L8.272 6.318l0.213 3.73l-3.711 0.175l0.981 3.604l-3.593 0.948l1.703 3.319l-3.318 1.679l2.353 2.89L0 25l2.9 2.3 l-2.353 2.892l3.318 1.68l-1.703 3.319l3.593 0.947l-0.981 3.604l3.711 0.177L8.272 43.68l3.666-0.603l0.562 3.691l3.461-1.356 l1.313 3.496l3.106-2.052L22.386 50L25 47.345L27.613 50l2.007-3.144l3.105 2.052l1.313-3.496l3.461 1.356l0.562-3.691l3.668 0.6 l-0.215-3.728l3.711-0.177l-0.98-3.604l3.594-0.947l-1.705-3.319l3.319-1.68l-2.353-2.892L50 25l-2.899-2.336l2.353-2.89 l-3.319-1.679l1.705-3.319l-3.594-0.948l0.98-3.604l-3.711-0.175l0.215-3.73l-3.668 0.604L37.5 3.229l-3.461 1.357l-1.313-3.494 L29.62 3.144L27.613 0L27.613 0z"
-                    />
-            </g>
-          </svg>
-        </div>
-      </div>
-      <h1>Find a facility near you</h1>
-      <p>We have locations in Oklahoma and Kansas!</p>
-      <form>
-        <div class="flexy">
-          <div class="ab-search">
-            <input id="autocomplete" type="search" placeholder="zip code, city, or state..." required>
-            <input type="hidden" id="city2" name="city2" />
-            <input type="hidden" id="cityLat" name="cityLat" />
-            <input type="hidden" id="cityLng" name="cityLng" />
-          </div>
-          <div class="ab-submit">
-            <input type="button" class="AS2-btn AS2-btn_red" value="Go"  onClick="direct();">
-          </div>
-      	</div>
-      </form>
-    </div>
-  </div>
-</div>
+<!---------------TODO--------------------->
 
 
 /******************************************/
-/*              AS2 Reviews               */
+/*              AS2 Auctions              */
 /******************************************/
 
+{% set table_id = 1027575 %}
 
-<div class="as2-reviews">
+<div class="as2-auctions">
   <div class="page_center md">
-    <h2>What People Are Saying</h2>
-    <div class="review_wrap"></div>
+    <div class="aa-container flexy fl-wrap_wrap">
+      {% for item in module.d_r %}
+        <div class="aa-date_container">
+          <h3>{{ item.a_d|datetimeformat('%A - %b %e, %Y') }}</h3>
+          <p class="aa-time">Starting at {{ item.a_d|datetimeformat('%l:%M %p') }}</p>
+          {% for item2 in item.l_i %}
+            {% for row in hubdb_table_rows(table_id) %}
+              {% if row[7] == item2.c_f|int %}
+                <div class="aa-place_container">
+                  <div class="aa-place">
+                    <h4>{{ row[1] }}</h4>
+                    <p class="aa-address">{{ row.street }}<br>{{ row.city }}, {{ row.state }}, {{ row.zip }}</p>
+                    <p class="aa-phone"><a href="tel:{{row[8]}}">{{row[8]}}</a></p>
+                  </div>
+                </div>
+              {% endif %}
+            {% endfor %}
+          {% endfor %}
+        </div>
+      {% endfor %}
+    </div>
   </div>
 </div>
 
+
 /******************************************/
-/*              AS2 Split Section         */
+/*           AS2 Available Units          */
 /******************************************/
 
-<div class="split-section">
-  <div class="ss-container flexy">
-    <div class="ss-split ss-left">
-      <h2>About American Self Storage</h2>
-      <p>American Self-Storage is an Oklahoma owned and managed company with 23 facilities to serve you, and to satisfy your self-storage needs. We know that our existence is possible because of you, our customer, and we want to make sure that you have the best customer experience possible when it comes to storing your belongings. We pride ourselves on maintaining great facilities and employing the best managers in the industry. We look forward to satisfying your self-storage needs!</p>
-      <p>Among our family of companies are American Self-Storage, Shawnee Self-Storage, Kickapoo Self-Storage, and 74th Street Self-Storage.</p>
-    </div>
-    <div class="ss-split ss-right" style="background: url(https://www.americanselfstorageok.com/hubfs/Site_Assets_2017/Selfstorage-Haus,_innen.jpg);">
-    </div>
+
+<!---------------TODO--------------------->
+
+
+/******************************************/
+/*              AS2 Blog Sidebar          */
+/******************************************/
+
+<div class="blog-sidebar">
+  <div class="bs-subscribe">
+    <h3>Subscribe<br><span>To be updated by email</span></h3>
+    {% form
+	form_to_use="{{ module.subscribe_form.form_id }}"
+	response_response_type="{{ module.subscribe_form.response_type }}"
+	response_message="{{ module.subscribe_form.message }}"
+	response_redirect_id="{{ module.subscribe_form.redirect_id }}"
+	response_redirect_url="{{module.subscribe_form.redirect_url}}"
+	gotowebinar_webinar_key="{{ module.subscribe_form.gotowebinar_webinar_key }}"
+%}
   </div>
-</div>
-
-
-/******************************************/
-/*              AS2 RSS Feed              */
-/******************************************/
-
-
-{% set blog = blog_recent_posts('default', 5) %}
-
-<div class="rss-feed">
-  <div class="page_center lg">
-    <div class="rf-wrap"  style="background: url(https://cdn2.hubspot.net/hubfs/3266276/AS2%20Assets/AS2%20RSS%20Feed%20Module/American_Self_Storage-Boxes_image-Blog_RSS_Feed-Asset.jpg) center center no-repeat; background-size: 120% auto;">
-      <h2>Recent Updates</h2>
-      <div class="rf-grid flexy">
-        {% for item in blog %}
-          <div class="rf-item">
-            <div class="rf-item_img">
-              <img src="{{ item.featured_image }}" alt="{{ item.featured_image_alt_text }}">
+  <div class="bs-section">
+    <h3>Our most Popular Posts</h3>
+    {% set pop_posts = blog_popular_posts('default', 5) %}
+    <ul class="pp-list">
+      {% for item in pop_posts %}
+        <li>
+          <a class="flexy" href="{{ item.absolute_url }}">
+            <div class="pp-img">
+              <img src="{{ item.post_list_summary_featured_image }}" alt="{{ item.featured_image_alt_text }}">
             </div>
-            <div class="rf-item_content">
-              <div class="rf-item_title">
-                <h3>{{ item.name }}</h3>
-                <span> {{ item.publish_date|datetimeformat('%B %e, %Y') }}</span>
-              </div>
-              <div class="rf-item_body">
-                <p>{{ item.post_body|safe|striptags|truncate('120', true, '...') }}</p>
-              </div>
-              <div class="rf-item_more">
-                <a href="{{ item.absolute_url }}">read more</a>
-              </div>
+            <div class="pp-info">
+              <h4>{{ item.name }}</h4>
+              <span>{{ item.publish_date|datetimeformat('%b %e, %Y') }}</span>
             </div>
-          </div>
-        {% endfor %}
-      </div>
-    </div>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="bs-section">
+    <h3>Our Favorite Topics</h3>
+    {% set topics = blog_topics('default', 250) %}
+    <ul class="bt-list">
+      {% for item in topics %}
+        <li><a href="{{ blog_tag_url(group.id, item.slug) }}">{{ item }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
   </div>
 </div>
+
 
 /******************************************/
 /*              AS2 City List             */
@@ -184,129 +126,48 @@
 </div>
 
 
+
 /******************************************/
-/*              AS2 Size Guide            */
+/*                AS2 Content             */
 /******************************************/
 
-
-{#<a href="javascript;" class="AS2-btn AS2-btn_red"><span class="sizeGuide">Size Guide</span></a>#}
-
-<div class="size-guide">
-  <div class="sg-stage">
-    <div class="sg-header">
-      <h3>Storage Unit Size Guide<br><span>American Self Storage</span></h3>
-      <button type="button" class="sg-close" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-    <div class="sg-wrap flexy">
-      <div class="sg-wrap_list">
-        <ul>
-          <li class="sg-link active" data-link="size5x5">5x5</li>
-          <li class="sg-link" data-link="size5x10">5x10</li>
-          <li class="sg-link" data-link="size5x15">5x15</li>
-          <li class="sg-link" data-link="size10x10">10x10</li>
-          <li class="sg-link" data-link="size10x15">10x15</li>
-          <li class="sg-link" data-link="size10x20">10x20</li>
-          <li class="sg-link" data-link="size10x30">10x30</li>
-        </ul>
-      </div>
-      <div class="sg-wrap_content">
-        <div class="sg-content active" data-slide="size5x5">
-          <img class="d-block img-fluid" src="https://cdn2.hubspot.net/hubfs/3266276/Size%20Estimator/5x5.png" alt="5x5 Storage Units at American Self Storage Oklahoma">
-          <p>Personal items, clothes, boxes, skis, children's toys, small furniture items, business records and sales rep materials.</p>
-        </div>
-        <div class="sg-content" data-slide="size5x10">
-          <img class="d-block img-fluid" src="https://cdn2.hubspot.net/hubfs/3266276/Size%20Estimator/5x10.png" alt="5x10 Storage Units at American Self Storage Oklahoma">
-          <p>Small amounts of furniture, sofas, chairs, chest of drawers, boxspring and mattress, business supplies and records. Plus other small items and boxes.</p>
-        </div>
-        <div class="sg-content" data-slide="size5x15">
-          <img class="d-block img-fluid" src="https://cdn2.hubspot.net/hubfs/3266276/Size%20Estimator/5x15.png" alt="5x15 Storage Units at American Self Storage Oklahoma">
-          <p>Small amounts of furniture, sofas, chairs, chest of drawers, boxspring and mattress, business supplies and records. Plus other small items and boxes.</p>
-        </div>
-        <div class="sg-content" data-slide="size10x10">
-          <img class="d-block img-fluid" src="https://cdn2.hubspot.net/hubfs/3266276/Size%20Estimator/10x10.png" alt="10x10 Storage Units at American Self Storage Oklahoma">
-          <p>One-bedroom apartment with major appliances, other furniture and supplies.</p>
-        </div>
-        <div class="sg-content" data-slide="size10x15">
-          <img class="d-block img-fluid" src="https://cdn2.hubspot.net/hubfs/3266276/Size%20Estimator/10x15.png" alt="10x15 Storage Units at American Self Storage Oklahoma">
-          <p>A two-bedroom apartment or house, including appliances, boxes and miscellaneous items and commercial storage inventory.</p>
-        </div>
-        <div class="sg-content" data-slide="size10x20">
-          <img class="d-block img-fluid" src="https://cdn2.hubspot.net/hubfs/3266276/Size%20Estimator/10x20.png" alt="10x20 Storage Units at American Self Storage Oklahoma">
-          <p>A three-bedroom house with major appliances, plus lots of boxes. Business storage files and inventory ideal for storage racks.</p>
-        </div>
-         <div class="sg-content" data-slide="size10x30">
-          <img class="d-block img-fluid" src="https://cdn2.hubspot.net/hubfs/3266276/Size%20Estimator/10x30.png" alt="10x30 Storage Units at American Self Storage Oklahoma">
-          <p>A four to five-bedroom house with major appliances and room for boxes. Excellent for business storage of files, equipment and permanent records.</p>
-        </div>
-      </div>
-    </div>
-    <div class="sg-footer">
-      {% cta guid="{{ module.cta_field }}" %}
+<div class="as2-content">
+  <div class="page_center sm">
+    <div class="ac-wrap">
+      {{ module.content }}
     </div>
   </div>
 </div>
 
 
 /******************************************/
-/*              AS2 Footer                */
+/*            AS2 Content and Form        */
 /******************************************/
 
-
-<footer class="as2-footer">
-  <div class="page_center lg">
-    <div class="af-wrap flexy">
-      <div class="af-half af-nav">
-        {% menu id="{{ module.navigaiton }}" %}
-      </div>
-      <div class="af-half af-bio">
-        {% if module.image_field.src %}
-          <img src="{{ module.image_field.src }}" alt="{{ module.image_field.alt }}" width="{{ module.image_field.width }}" height="{{ module.image_field.height }}">
-        {% endif %}
-        <p>
-          American Self-Storage is an Oklahoma owned company serving Oklahoma and Wichita, KS with 23 facilities, and over 30 years of experience. The Company offers a large selection of affordable, secure storage for your personal storage, boat and RV storage and business storage solutions. At American Self Storage we know that our existence is possible because of you, our customer, and we want to make sure that you have the best customer experience possible when it comes to storing your belongings. In addition to storage we also provide packing supplies and U-Haul truck rentals. The Company prides itself on maintaining great facilities and employing the best managers in the industry. We look forward to satisfying your self-storage needs.
-        </p>
-        <ul>
-          <li><img style="-webkit-transform: translateY(-6px); transform: translateY(-6px);" src="https://www.americanselfstorageok.com/hubfs/Site_Assets_2017/uhaul_affiliate.png" alt=""></li>
-          <li><a target="_blank" href="https://www.facebook.com/AmericanSelfStorageOK"><!-- Facebook Square -->
-								<svg aria-labelledby="facebook-icon" role="img" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg"><title id="facebook-icon">Facebook icon</title><path class="tm_facebook" d="M0,0v35h18.6V21.5h-4.6V16h4.6v-4.6c0-3.4,2.7-6.1,6.1-6.1h4.8v5h-3.4c-1.1,0-1.9,0.9-1.9,1.9V16h5.3l-0.7,5.5h-4.5V35H35V0H0z M0,0"/></svg></a></li>
-          <!--li><a target="_blank" href=""><!-- Google Square ->
-								<svg aria-labelledby="google-icon" role="img" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg"><title id="google-icon">Google icon</title><g><path class="tm_google" d="M0,0v35h35V0H0z M20.4,19c-0.6,3.9-3.5,6.2-7.3,6.2c-4.3,0-7.7-3.5-7.7-7.7c0-4.3,3.5-7.7,7.7-7.7c2.1,0,3.9,0.7,5.2,2L16,13.9c-0.8-0.8-1.8-1.2-3-1.2c-2.5,0-4.5,2.1-4.5,4.6c0,2.5,2,4.6,4.5,4.6c2.1,0,3.7-1,4.2-3.1h-4.2v-3.1h7.3c0.1,0.5,0.1,1,0.1,1.6C20.5,18,20.5,18.5,20.4,19L20.4,19z M29.7,18H27v2.7H25V18h-2.7v-1.9H25v-2.7H27v2.7h2.7V18z M29.7,18"/></g></svg></a></li-->
-        </ul>
-      </div>
-    </div>
-    <div class="af-copyright">
-      &copy; Copyright {{ year }}, American Self Storage. All Rights Reserved.<br>
-      <span>Marketing &amp; Design Powered by <a href="https://www.khaoticdigtal.com" target="_blank">Khaotic Digital, LLC</a></span>
-    </div>
+<div class="content-form">
+   <div class="page_center md">
+      <div class="cf-wrap flexy">
+        <div class="cf-content f06">
+          {% inline_rich_text field="content" value="{{ module.content }}" %}
+        </div>
+        <div class="cf-form">
+          <div class="form_wrap f04">
+            {% form
+              form_to_use="{{ module.contact_form.form_id }}"
+              response_response_type="{{ module.contact_form.response_type }}"
+              response_message="{{ module.contact_form.message }}"
+              response_redirect_id="{{ module.contact_form.redirect_id }}"
+              response_redirect_url="{{module.contact_form.redirect_url}}"
+              gotowebinar_webinar_key="{{ module.contact_form.gotowebinar_webinar_key }}"
+            %}
+          </div>
+        </div>
+     </div>
   </div>
-</footer>
-
-
-
-/******************************************/
-/*              AS2 Inner Banner          */
-/******************************************/
-
-<div class="inner-banner" style="background: url(https://www.americanselfstorageok.com/hubfs/Site_Assets_2017/home_banner_bg2-compressor.jpg) center center no-repeat; background-size: cover;">
-
-</div>
-<div class="h1-container">
-  {% if dynamic_page_hubdb_row %}
-  <h1>{{ dynamic_page_hubdb_row.name }}</h1>
-  {% elif group %}
-    {% if is_listing_view %}
-  <h1>{{ group.public_title }}</h1>
-    {% endif %}
-  {% else %}
-  <h1>{{ module.h1_text }}</h1>
-  {% endif %}
 </div>
 
-
 /******************************************/
-/*              AS2 Dynamic Locations     */
+/*           AS2 Dynamic Locations        */
 /******************************************/
 
 <script>
@@ -662,7 +523,192 @@
 
 
 /******************************************/
-/*           AS2 Locations Map and Filter */
+/*              AS2 Footer                */
+/******************************************/
+
+
+<footer class="as2-footer">
+  <div class="page_center lg">
+    <div class="af-wrap flexy">
+      <div class="af-half af-nav">
+        {% menu id="{{ module.navigaiton }}" %}
+      </div>
+      <div class="af-half af-bio">
+        {% if module.image_field.src %}
+          <img src="{{ module.image_field.src }}" alt="{{ module.image_field.alt }}" width="{{ module.image_field.width }}" height="{{ module.image_field.height }}">
+        {% endif %}
+        <p>
+          American Self-Storage is an Oklahoma owned company serving Oklahoma and Wichita, KS with 23 facilities, and over 30 years of experience. The Company offers a large selection of affordable, secure storage for your personal storage, boat and RV storage and business storage solutions. At American Self Storage we know that our existence is possible because of you, our customer, and we want to make sure that you have the best customer experience possible when it comes to storing your belongings. In addition to storage we also provide packing supplies and U-Haul truck rentals. The Company prides itself on maintaining great facilities and employing the best managers in the industry. We look forward to satisfying your self-storage needs.
+        </p>
+        <ul>
+          <li><img style="-webkit-transform: translateY(-6px); transform: translateY(-6px);" src="https://www.americanselfstorageok.com/hubfs/Site_Assets_2017/uhaul_affiliate.png" alt=""></li>
+          <li><a target="_blank" href="https://www.facebook.com/AmericanSelfStorageOK"><!-- Facebook Square -->
+								<svg aria-labelledby="facebook-icon" role="img" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg"><title id="facebook-icon">Facebook icon</title><path class="tm_facebook" d="M0,0v35h18.6V21.5h-4.6V16h4.6v-4.6c0-3.4,2.7-6.1,6.1-6.1h4.8v5h-3.4c-1.1,0-1.9,0.9-1.9,1.9V16h5.3l-0.7,5.5h-4.5V35H35V0H0z M0,0"/></svg></a></li>
+          <!--li><a target="_blank" href=""><!-- Google Square ->
+								<svg aria-labelledby="google-icon" role="img" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg"><title id="google-icon">Google icon</title><g><path class="tm_google" d="M0,0v35h35V0H0z M20.4,19c-0.6,3.9-3.5,6.2-7.3,6.2c-4.3,0-7.7-3.5-7.7-7.7c0-4.3,3.5-7.7,7.7-7.7c2.1,0,3.9,0.7,5.2,2L16,13.9c-0.8-0.8-1.8-1.2-3-1.2c-2.5,0-4.5,2.1-4.5,4.6c0,2.5,2,4.6,4.5,4.6c2.1,0,3.7-1,4.2-3.1h-4.2v-3.1h7.3c0.1,0.5,0.1,1,0.1,1.6C20.5,18,20.5,18.5,20.4,19L20.4,19z M29.7,18H27v2.7H25V18h-2.7v-1.9H25v-2.7H27v2.7h2.7V18z M29.7,18"/></g></svg></a></li-->
+        </ul>
+      </div>
+    </div>
+    <div class="af-copyright">
+      &copy; Copyright {{ year }}, American Self Storage. All Rights Reserved.<br>
+      <span>Marketing &amp; Design Powered by <a href="https://www.khaoticdigtal.com" target="_blank">Khaotic Digital, LLC</a></span>
+    </div>
+  </div>
+</footer>
+
+
+/******************************************/
+/*              AS2 Header                */
+/******************************************/
+
+<header class="as2-header">
+  <div class="ah-pre_header">
+    <div class="page_center lg flexy">
+			<div class="ah-socials">
+        <ul>
+          <li><img style="" src="https://www.americanselfstorageok.com/hubfs/Site_Assets_2017/uhaul_affiliate.png" alt=""></li>
+          <li><a target="_blank" href="https://www.facebook.com/AmericanSelfStorageOK"><!-- Facebook Square -->
+								<svg aria-labelledby="facebook-icon" role="img" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg"><title id="facebook-icon">Facebook icon</title><path class="tm_facebook" d="M0,0v35h18.6V21.5h-4.6V16h4.6v-4.6c0-3.4,2.7-6.1,6.1-6.1h4.8v5h-3.4c-1.1,0-1.9,0.9-1.9,1.9V16h5.3l-0.7,5.5h-4.5V35H35V0H0z M0,0"/></svg></a></li>
+          <!--li><a target="_blank" href=""><!-- Google Square ->
+								<svg aria-labelledby="google-icon" role="img" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg"><title id="google-icon">Google icon</title><g><path class="tm_google" d="M0,0v35h35V0H0z M20.4,19c-0.6,3.9-3.5,6.2-7.3,6.2c-4.3,0-7.7-3.5-7.7-7.7c0-4.3,3.5-7.7,7.7-7.7c2.1,0,3.9,0.7,5.2,2L16,13.9c-0.8-0.8-1.8-1.2-3-1.2c-2.5,0-4.5,2.1-4.5,4.6c0,2.5,2,4.6,4.5,4.6c2.1,0,3.7-1,4.2-3.1h-4.2v-3.1h7.3c0.1,0.5,0.1,1,0.1,1.6C20.5,18,20.5,18.5,20.4,19L20.4,19z M29.7,18H27v2.7H25V18h-2.7v-1.9H25v-2.7H27v2.7h2.7V18z M29.7,18"/></g></svg></a></li-->
+        </ul>
+      </div>
+      <div class="ah-access">
+        <ul>
+          <li>{% cta guid="{{ module.cta_2 }}" %}</li>
+          <li>{% cta guid="{{ module.cta_1 }}" %}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="ah-main_header">
+    <div class="page_center lg flexy fl-vt_center fl-hz_center">
+			<div class="ah-logo_wrap">
+        <a href="/">
+          <img src="https://www.americanselfstorageok.com/hubfs/Site_Assets_2017/american_self_storage_logo.png" alt="">
+        </a>
+      </div>
+      <div class="ah-mob_trigger">
+        <button class="hamburger hamburger--3dxy" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </div>
+      <div class="ah-nav_wrap">
+        {% menu id="{{ module.navigation }}" %}
+      </div>
+    </div>
+  </div>
+</header>
+
+/******************************************/
+/*              AS2 Home Banner           */
+/******************************************/
+
+<div class="as2-banner" style="background: url(https://www.americanselfstorageok.com/hubfs/Site_Assets_2017/home_banner_bg2-compressor.jpg) center center no-repeat; background-size: cover;">
+  <div class="page_center sm">
+    <div class="ab-content">
+      <div class="square_float">
+        <div class="square">
+          <div class="square2">
+            Home of the<br>
+            <strong><big>12 mo. Rate</big></strong><br>
+            Guarantee!
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="120px" height="120px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
+            <g>
+              <polygon fill="#EB2A3D" points="25,47 22.4,49.6 20.5,46.5 17.4,48.5 16.1,45.1 12.7,46.4 12.1,42.8 8.5,43.4 8.7,39.7 5.1,39.5 6.1,36 2.5,35.1 4.2,31.8 0.9,30.1 3.3,27.3 0.4,25 3.3,22.7 0.9,19.9 4.2,18.2 2.5,14.9 6.1,14 5.1,10.5 8.7,10.3 8.5,6.6 12.1,7.2 12.7,3.6 16.1,4.9 17.4,1.5 20.5,3.5 22.4,0.4 25,3 27.6,0.4 29.5,3.5 32.6,1.5 33.9,4.9 37.3,3.6 37.9,7.2 41.5,6.6 41.3,10.3 44.9,10.5 43.9,14 47.5,14.9 45.8,18.2 49.1,19.9 46.7,22.7 49.6,25 46.7,27.3 49.1,30.1 45.8,31.8 47.5,35.1 43.9,36 44.9,39.5 41.3,39.7 41.5,43.4 37.9,42.8 37.3,46.4 33.9,45.1 32.6,48.5 29.5,46.5 27.6,49.6"
+                       />
+              <path fill="#1C3664" d="M27.529 0.798l1.669 2.615l0.273 0.428l0.424-0.28l2.583-1.706l1.093 2.907l0.178 0.475l0.473-0.185 L37.1 3.923l0.468 3.075l0.076 0.5l0.499-0.083l3.052-0.503l-0.179 3.107l-0.029 0.504l0.505 0.024l3.088 0.146l-0.816 3 l-0.132 0.486l0.486 0.128l2.993 0.79l-1.421 2.766l-0.23 0.448l0.449 0.227l2.765 1.398l-1.96 2.408l-0.317 0.39l0.392 0.3 L49.203 25l-2.416 1.944l-0.392 0.315l0.317 0.39l1.961 2.41l-2.766 1.399l-0.449 0.228l0.23 0.447l1.42 2.766l-2.991 0.8 l-0.488 0.128l0.133 0.486l0.817 3.003l-3.089 0.147l-0.505 0.023l0.029 0.504l0.179 3.104l-3.052-0.501l-0.499-0.082l-0.076 0.5 L37.1 46.074l-2.878-1.128l-0.473-0.185l-0.178 0.475l-1.093 2.909l-2.583-1.706l-0.424-0.28l-0.273 0.428l-1.669 2.6 l-2.173-2.208L25 46.632l-0.356 0.362l-2.173 2.208l-1.668-2.614l-0.273-0.429l-0.424 0.28l-2.583 1.706l-1.092-2.909l-0.178-0.475 l-0.473 0.185L12.9 46.075l-0.468-3.073l-0.076-0.5l-0.499 0.082l-3.05 0.501l0.177-3.104l0.029-0.504l-0.504-0.023L5.42 39.3 l0.818-3.002l0.132-0.487l-0.487-0.128l-2.992-0.789l1.419-2.766l0.229-0.447l-0.449-0.228L1.327 30.06l1.961-2.41l0.317-0.39 l-0.392-0.315L0.797 25l2.416-1.947l0.392-0.315l-0.317-0.39L1.327 19.94l2.764-1.398l0.449-0.227L4.31 17.867l-1.419-2.767 l2.992-0.79l0.487-0.128l-0.132-0.486L5.42 10.694l3.088-0.146l0.504-0.024l-0.029-0.504L8.807 6.913l3.05 0.503l0.5 0.1 l0.076-0.5L12.9 3.923l2.878 1.128l0.472 0.185l0.179-0.475l1.092-2.907l2.583 1.706l0.424 0.28l0.273-0.428l1.668-2.615 l2.173 2.208L25 3.368l0.356-0.362L27.529 0.8 M27.613 0L25 2.655L22.386 0L20.38 3.144l-3.106-2.051l-1.313 3.494L12.5 3.2 l-0.562 3.693L8.272 6.318l0.213 3.73l-3.711 0.175l0.981 3.604l-3.593 0.948l1.703 3.319l-3.318 1.679l2.353 2.89L0 25l2.9 2.3 l-2.353 2.892l3.318 1.68l-1.703 3.319l3.593 0.947l-0.981 3.604l3.711 0.177L8.272 43.68l3.666-0.603l0.562 3.691l3.461-1.356 l1.313 3.496l3.106-2.052L22.386 50L25 47.345L27.613 50l2.007-3.144l3.105 2.052l1.313-3.496l3.461 1.356l0.562-3.691l3.668 0.6 l-0.215-3.728l3.711-0.177l-0.98-3.604l3.594-0.947l-1.705-3.319l3.319-1.68l-2.353-2.892L50 25l-2.899-2.336l2.353-2.89 l-3.319-1.679l1.705-3.319l-3.594-0.948l0.98-3.604l-3.711-0.175l0.215-3.73l-3.668 0.604L37.5 3.229l-3.461 1.357l-1.313-3.494 L29.62 3.144L27.613 0L27.613 0z"
+                    />
+            </g>
+          </svg>
+        </div>
+      </div>
+      <h1>Find a facility near you</h1>
+      <p>We have locations in Oklahoma and Kansas!</p>
+      <form>
+        <div class="flexy">
+          <div class="ab-search">
+            <input id="autocomplete" type="search" placeholder="zip code, city, or state..." required>
+            <input type="hidden" id="city2" name="city2" />
+            <input type="hidden" id="cityLat" name="cityLat" />
+            <input type="hidden" id="cityLng" name="cityLng" />
+          </div>
+          <div class="ab-submit">
+            <input type="button" class="AS2-btn AS2-btn_red" value="Go"  onClick="direct();">
+          </div>
+      	</div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+/******************************************/
+/*              AS2 Inner Banner          */
+/******************************************/
+
+<div class="inner-banner" style="background: url(https://www.americanselfstorageok.com/hubfs/Site_Assets_2017/home_banner_bg2-compressor.jpg) center center no-repeat; background-size: cover;">
+
+</div>
+<div class="h1-container">
+  {% if dynamic_page_hubdb_row %}
+  <h1>{{ dynamic_page_hubdb_row.name }}</h1>
+  {% elif group %}
+    {% if is_listing_view %}
+  <h1>{{ group.public_title }}</h1>
+    {% endif %}
+  {% else %}
+  <h1>{{ module.h1_text }}</h1>
+  {% endif %}
+</div>
+
+
+/******************************************/
+/*           AS2 Locations By City        */
+/******************************************/
+
+
+{% set locations = hubdb_table_rows(1027575) %}
+
+<div class="city-locations">
+  <div class="page_center lg">
+    <div class="flexy">
+
+    <div class="cl-list f01">
+      {% for item in locations %}
+        {% if item.city|lower|replace(' ', '-') == module.choice_field %}
+          <div class="cl-item">
+            <h2>
+              {{ item.name }}
+            </h2>
+            <div class="flexy">
+              <div class="cl-item_img f01">
+                <img src="{{ item.image.url }}" alt="{{item.name}}">
+              </div>
+              <div class="cl-item_info f02">
+                <p>
+                  {{ item.street }}<br>{{ item.city }}, {{ item.state }} {{ item.zip }}
+                </p>
+                <a class="AS2-btn AS2-btn_red">More Info</a>
+              </div>
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+     </div>
+      <div class="cl-info f01">
+        {{ module.city_info }}
+      </div>
+    </div>
+  </div>
+</div>
+
+
+/******************************************/
+/*      AS2 Locations Map and Filter      */
 /******************************************/
 
 {% set locations = hubdb_table_rows(1027575) %}
@@ -722,46 +768,6 @@
     </div>
     <div id="mf-map" class="mf-map">
         <div id="map"></div>
-    </div>
-  </div>
-</div>
-
-
-/******************************************/
-/*      AS2 Locations Content and Form    */
-/******************************************/
-
-<div class="content-form">
-   <div class="page_center md">
-      <div class="cf-wrap flexy">
-        <div class="cf-content f06">
-          {% inline_rich_text field="content" value="{{ module.content }}" %}
-        </div>
-        <div class="cf-form">
-          <div class="form_wrap f04">
-            {% form
-              form_to_use="{{ module.contact_form.form_id }}"
-              response_response_type="{{ module.contact_form.response_type }}"
-              response_message="{{ module.contact_form.message }}"
-              response_redirect_id="{{ module.contact_form.redirect_id }}"
-              response_redirect_url="{{module.contact_form.redirect_url}}"
-              gotowebinar_webinar_key="{{ module.contact_form.gotowebinar_webinar_key }}"
-            %}
-          </div>
-        </div>
-     </div>
-  </div>
-</div>
-
-
-/******************************************/
-/*                AS2 Content             */
-/******************************************/
-
-<div class="as2-content">
-  <div class="page_center sm">
-    <div class="ac-wrap">
-      {{ module.content }}
     </div>
   </div>
 </div>
@@ -830,6 +836,287 @@
 
       {{ mixList(locations) }}
 
+    </div>
+  </div>
+</div>
+
+
+/******************************************/
+/*         AS2 Reserve Form Tester        */
+/******************************************/
+
+<div class="reserve-form">
+  <div class="form_wrap">
+    <form id="res-form" action="" method="POST">
+      <div class="rf-info">
+        <div class="rf-info_size">
+          <b>Unit Size:</b> <span></span>
+        </div>
+        <div class="rf-info_rate">
+          <b>Mo. Rate:</b> <span></span>
+        </div>
+        <div class="rf-info_date">
+          <b>Date to Reserve:</b> <span></span>
+        </div>
+      </div>
+      <div class="rf-input">
+        <label for="fname">First Name</label>
+        <input type="text" name="fname" placeholder="first name" required>
+      </div>
+      <div class="rf-input">
+        <label for="lname">Last Name</label>
+        <input type="text" name="lname" placeholder="last name" required>
+      </div>
+      <div class="rf-input">
+        <label for="add1">Street Address</label>
+        <input type="text" name="add1" placeholder="street address" required>
+      </div>
+      <div class="rf-input">
+        <label for="add2">Apartment, Suite, etc. Number</label>
+        <input type="text" name="add2" placeholder="#" required>
+      </div>
+      <div class="flexy">
+        <div class="rf-input f02">
+          <label for="city">City</label>
+          <input type="text" name="city" placeholder="city" required>
+        </div>
+        <div class="rf-input f01">
+          <label for="state">State</label>
+          <select class="form-control" name="state" placeholder="choose a state..." required>
+              <option value="AL">AL</option>
+              <option value="AK">AK</option>
+              <option value="AZ">AZ</option>
+              <option value="AR">AR</option>
+              <option value="CA">CA</option>
+              <option value="CO">CO</option>
+              <option value="CT">CT</option>
+              <option value="DE">DE</option>
+              <option value="DC">DC</option>
+              <option value="FL">FL</option>
+              <option value="GA">GA</option>
+              <option value="HI">HI</option>
+              <option value="ID">ID</option>
+              <option value="IL">IL</option>
+              <option value="IN">IN</option>
+              <option value="IA">IA</option>
+              <option value="KS">KS</option>
+              <option value="KY">KY</option>
+              <option value="LA">LA</option>
+              <option value="ME">ME</option>
+              <option value="MD">MD</option>
+              <option value="MA">MA</option>
+              <option value="MI">MI</option>
+              <option value="MN">MN</option>
+              <option value="MS">MS</option>
+              <option value="MO">MO</option>
+              <option value="MT">MT</option>
+              <option value="NE">NE</option>
+              <option value="NV">NV</option>
+              <option value="NH">NH</option>
+              <option value="NJ">NJ</option>
+              <option value="NM">NM</option>
+              <option value="NY">NY</option>
+              <option value="NC">NC</option>
+              <option value="ND">ND</option>
+              <option value="OH">OH</option>
+              <option value="OK">OK</option>
+              <option value="OR">OR</option>
+              <option value="PA">PA</option>
+              <option value="RI">RI</option>
+              <option value="SC">SC</option>
+              <option value="SD">SD</option>
+              <option value="TN">TN</option>
+              <option value="TX">TX</option>
+              <option value="UT">UT</option>
+              <option value="VT">VT</option>
+              <option value="VA">VA</option>
+              <option value="WA">WA</option>
+              <option value="WV">WV</option>
+              <option value="WI">WI</option>
+              <option value="WY">WY</option>
+            </select>
+        </div>
+        <div class="rf-input f01">
+          <label for="zip">Zip</label>
+          <input type="num" name="zip" placeholder="zip" required>
+        </div>
+      </div>
+      <div class="rf-input">
+        <label for="phone">Phone</label>
+        <input type="tel" name="phone" placeholder="phone number" required>
+      </div>
+      <div class="rf-input">
+        <label for="email">Email</label>
+        <input type="email" name="email" placeholder="email" required>
+      </div>
+      <div class="rf-payment">
+        <legend>
+        Payment Information
+        </legend>
+        <div class="rf-text">
+          a fee of $6.95 will be applied to your credit card by Uhaul to complete this reservation. This amount will be refunded after successfully leaving a review of our facility with Uhaul.
+        </div>
+        <div class="flexy">
+          <div class="rf-input f03">
+            <label for="cc">CC Number</label>
+            <input type="text" name="cc" placeholder="credit card" required>
+          </div>
+          <div class="rf-input f01">
+            <label for="exp">Exp</label>
+            <input type="num" name="exp" placeholder="MMYY" required>
+          </div>
+          <div class="rf-input f01">
+            <label for="csc">CSC</label>
+            <input type="num" name="exp" placeholder="csc" required>
+          </div>
+        </div>
+        <div class="rf-input f01">
+          <label for="ins">Choose Insurance</label>
+          <select class="ins-select form-control" name="ins">
+            <option value="">-- Choose insurance --</option>
+          </select>
+        </div>
+        <input type="hidden" name="insurances" value='' />
+        <input type="hidden" name="unitid" value="" />
+        <input type="hidden" name="dates" value='' />
+        <input type="hidden" name="size" value="" />
+        <input type="hidden" name="price" value="" />
+        <div class="rf-submit">
+          <input type="submit" value="Make Reservation">
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+/******************************************/
+/*              AS2 Reviews               */
+/******************************************/
+
+
+<div class="as2-reviews">
+  <div class="page_center md">
+    <h2>What People Are Saying</h2>
+    <div class="review_wrap"></div>
+  </div>
+</div>
+
+
+/******************************************/
+/*              AS2 RSS Feed              */
+/******************************************/
+
+
+{% set blog = blog_recent_posts('default', 5) %}
+
+<div class="rss-feed">
+  <div class="page_center lg">
+    <div class="rf-wrap"  style="background: url(https://cdn2.hubspot.net/hubfs/3266276/AS2%20Assets/AS2%20RSS%20Feed%20Module/American_Self_Storage-Boxes_image-Blog_RSS_Feed-Asset.jpg) center center no-repeat; background-size: 120% auto;">
+      <h2>Recent Updates</h2>
+      <div class="rf-grid flexy">
+        {% for item in blog %}
+          <div class="rf-item">
+            <div class="rf-item_img">
+              <img src="{{ item.featured_image }}" alt="{{ item.featured_image_alt_text }}">
+            </div>
+            <div class="rf-item_content">
+              <div class="rf-item_title">
+                <h3>{{ item.name }}</h3>
+                <span> {{ item.publish_date|datetimeformat('%B %e, %Y') }}</span>
+              </div>
+              <div class="rf-item_body">
+                <p>{{ item.post_body|safe|striptags|truncate('120', true, '...') }}</p>
+              </div>
+              <div class="rf-item_more">
+                <a href="{{ item.absolute_url }}">read more</a>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+
+/******************************************/
+/*              AS2 Size Guide            */
+/******************************************/
+
+
+{#<a href="javascript;" class="AS2-btn AS2-btn_red"><span class="sizeGuide">Size Guide</span></a>#}
+
+<div class="size-guide">
+  <div class="sg-stage">
+    <div class="sg-header">
+      <h3>Storage Unit Size Guide<br><span>American Self Storage</span></h3>
+      <button type="button" class="sg-close" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="sg-wrap flexy">
+      <div class="sg-wrap_list">
+        <ul>
+          <li class="sg-link active" data-link="size5x5">5x5</li>
+          <li class="sg-link" data-link="size5x10">5x10</li>
+          <li class="sg-link" data-link="size5x15">5x15</li>
+          <li class="sg-link" data-link="size10x10">10x10</li>
+          <li class="sg-link" data-link="size10x15">10x15</li>
+          <li class="sg-link" data-link="size10x20">10x20</li>
+          <li class="sg-link" data-link="size10x30">10x30</li>
+        </ul>
+      </div>
+      <div class="sg-wrap_content">
+        <div class="sg-content active" data-slide="size5x5">
+          <img class="d-block img-fluid" src="https://cdn2.hubspot.net/hubfs/3266276/Size%20Estimator/5x5.png" alt="5x5 Storage Units at American Self Storage Oklahoma">
+          <p>Personal items, clothes, boxes, skis, children's toys, small furniture items, business records and sales rep materials.</p>
+        </div>
+        <div class="sg-content" data-slide="size5x10">
+          <img class="d-block img-fluid" src="https://cdn2.hubspot.net/hubfs/3266276/Size%20Estimator/5x10.png" alt="5x10 Storage Units at American Self Storage Oklahoma">
+          <p>Small amounts of furniture, sofas, chairs, chest of drawers, boxspring and mattress, business supplies and records. Plus other small items and boxes.</p>
+        </div>
+        <div class="sg-content" data-slide="size5x15">
+          <img class="d-block img-fluid" src="https://cdn2.hubspot.net/hubfs/3266276/Size%20Estimator/5x15.png" alt="5x15 Storage Units at American Self Storage Oklahoma">
+          <p>Small amounts of furniture, sofas, chairs, chest of drawers, boxspring and mattress, business supplies and records. Plus other small items and boxes.</p>
+        </div>
+        <div class="sg-content" data-slide="size10x10">
+          <img class="d-block img-fluid" src="https://cdn2.hubspot.net/hubfs/3266276/Size%20Estimator/10x10.png" alt="10x10 Storage Units at American Self Storage Oklahoma">
+          <p>One-bedroom apartment with major appliances, other furniture and supplies.</p>
+        </div>
+        <div class="sg-content" data-slide="size10x15">
+          <img class="d-block img-fluid" src="https://cdn2.hubspot.net/hubfs/3266276/Size%20Estimator/10x15.png" alt="10x15 Storage Units at American Self Storage Oklahoma">
+          <p>A two-bedroom apartment or house, including appliances, boxes and miscellaneous items and commercial storage inventory.</p>
+        </div>
+        <div class="sg-content" data-slide="size10x20">
+          <img class="d-block img-fluid" src="https://cdn2.hubspot.net/hubfs/3266276/Size%20Estimator/10x20.png" alt="10x20 Storage Units at American Self Storage Oklahoma">
+          <p>A three-bedroom house with major appliances, plus lots of boxes. Business storage files and inventory ideal for storage racks.</p>
+        </div>
+         <div class="sg-content" data-slide="size10x30">
+          <img class="d-block img-fluid" src="https://cdn2.hubspot.net/hubfs/3266276/Size%20Estimator/10x30.png" alt="10x30 Storage Units at American Self Storage Oklahoma">
+          <p>A four to five-bedroom house with major appliances and room for boxes. Excellent for business storage of files, equipment and permanent records.</p>
+        </div>
+      </div>
+    </div>
+    <div class="sg-footer">
+      {% cta guid="{{ module.cta_field }}" %}
+    </div>
+  </div>
+</div>
+
+
+/******************************************/
+/*              AS2 Split Section         */
+/******************************************/
+
+<div class="split-section">
+  <div class="ss-container flexy">
+    <div class="ss-split ss-left">
+      <h2>About American Self Storage</h2>
+      <p>American Self-Storage is an Oklahoma owned and managed company with 23 facilities to serve you, and to satisfy your self-storage needs. We know that our existence is possible because of you, our customer, and we want to make sure that you have the best customer experience possible when it comes to storing your belongings. We pride ourselves on maintaining great facilities and employing the best managers in the industry. We look forward to satisfying your self-storage needs!</p>
+      <p>Among our family of companies are American Self-Storage, Shawnee Self-Storage, Kickapoo Self-Storage, and 74th Street Self-Storage.</p>
+    </div>
+    <div class="ss-split ss-right" style="background: url(https://www.americanselfstorageok.com/hubfs/Site_Assets_2017/Selfstorage-Haus,_innen.jpg);">
     </div>
   </div>
 </div>
