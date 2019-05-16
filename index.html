@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="AS2_Globals.css" />
 
-    <title> Contact Us </title>
+    <title>Insurance Guide | American Self Storage</title>
 
   </head>
 
@@ -73,41 +73,21 @@
 </div>
 <div class="h1-container">
 
-  <h1>We Have 23 Locations</h1>
+  <h1>Insurance Guide, A to Z</h1>
 
 </div>
 
 
 
 <!-------------------------------------------
-            AS2 Content and Form
+                AS2 Content
 ------------------------------------------->
 
-<div class="content-form">
-   <div class="page_center md">
-      <div class="cf-wrap flexy">
-        <div class="cf-content f06">
-          <div id="hs_cos_wrapper_widget_1553502090610_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_inline_rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="inline_rich_text" data-hs-cos-field="content">
-            <h2><img src="https://cdn2.hubspot.net/hub/3266276/hubfs/Site_Assets_2017/american_self_storage_logo.png?width=411&amp;name=american_self_storage_logo.png" alt="american_self_storage_logo" width="411" style="width: 411px; margin: 0px auto 30px; display: block;"></h2>
-            <h2 style="color: #032459; font-size: 3.8rem; font-weight: bold; text-align: center;">American Self Storage Corporate</h2>
-            <p>American Self-Storage is an Oklahoma owned company serving Oklahoma and Wichita, KS with 23 facilities, and over 30 years of experience. The Company offers a large selection of affordable, secure storage for your personal storage, boat and RV storage and business storage solutions. At American Self Storage we know that our existence is possible because of you, our customer, and we want to make sure that you have the best customer experience possible when it comes to storing your belongings. In addition to storage we also provide packing supplies and U-Haul truck rentals. The Company prides itself on maintaining great facilities and employing the best managers in the industry. We look forward to satisfying your self-storage needs.</p>
-            <h2>Contact Information</h2>
-            <p>info@americanselfstorageok.com</p>
-            <a class="AS2-btn AS2-btn_red" href="mailto:info@americanselfstorageok.com">Email Us</a></div>
-        </div>
-        <div class="cf-form">
-          <div class="form_wrap f04">
-            {% form
-              form_to_use="{{ module.contact_form.form_id }}"
-              response_response_type="{{ module.contact_form.response_type }}"
-              response_message="{{ module.contact_form.message }}"
-              response_redirect_id="{{ module.contact_form.redirect_id }}"
-              response_redirect_url="{{module.contact_form.redirect_url}}"
-              gotowebinar_webinar_key="{{ module.contact_form.gotowebinar_webinar_key }}"
-            %}
-          </div>
-        </div>
-     </div>
+<div class="as2-content">
+  <div class="page_center sm">
+    <div class="ac-wrap">
+      {{ module.content }}
+    </div>
   </div>
 </div>
 
