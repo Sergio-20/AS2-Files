@@ -394,7 +394,7 @@
 
 
 <!-------------------------------------------
-              AS2 Locations By City
+            AS2 Locations By City
 ------------------------------------------->
 
 
@@ -910,67 +910,271 @@
        AS2 Rentals and Supply Providers
 ------------------------------------------->
 
-{% set locations = hubdb_table_rows(1027575) %}
-{% set choice = module.for_list_providers %}
-
-{% macro mixList(i) %}
-  {% for item in i|groupby('city') %}
-    <h3>{{ item.grouper }}</h3>
-    <div class="flexy fl-wrap_wrap">
-      {% for item2 in item.list %}
-        {% if choice == "trucks" %}
-          {% if item2.truck_rental_url %}
-            {{ markup(item2) }}
-          {% endif %}
-        {% elif choice == "trailers" %}
-          {% if item2.trailer_rental_url %}
-            {{ markup(item2) }}
-          {% endif %}
-        {% elif choice == "packing_supplies" %}
-          {% if item2.packing_supplies_url %}
-            {{ markup(item2) }}
-          {% endif %}
-        {% endif %}
-      {% endfor %}
-    </div>
-  {% endfor %}
-{% endmacro %}
-
-{% macro markup(i) %}
-    <div class="rs-item">
-      <h4>{{ i.name }}</h4>
-      <p>{{ i.street }}<br> {{ i.city }}, {{ i.state }} {{ i.zip }}</p>
-      {% set phone = i.phone|list %}
-      <p><a href="tel:+1{{ place.phone }}">
-              {%- for x in phone -%}
-                {{x}}{% if loop.index == 1 %} ({% elif loop.index == 4 %}) {% elif loop.index == 7 %}-{% endif %}
-              {%- endfor -%}
-            </a></p>
-      <a class="AS2-btn AS2-btn_red" target="_blank" href="{% if choice == 'trucks' %}Rent a Truck
-                                                      {% elif choice == 'trailers' %}
-                                                        Rent a trailer
-                                                      {% elif choice == 'packing_supplies' %}
-                                                        {{ item.packing_supplies_url }}
-                                                     {% endif %}">
-          {% if choice == 'trucks' %}
-            Rent a Truck
-          {% elif choice == 'trailers' %}
-            Rent a Trailer
-          {% elif choice == 'packing_supplies' %}
-            Order Packing Supplies
-          {% endif %}
-      </a>
-    </div>
-{% endmacro %}
-
 <div class="rentals-supplies">
   <div class="page_center lg">
     <div class="rs-grid">
 
-      {{ mixList(locations) }}
+        <h3>Edmond</h3>
+        <div class="flexy fl-wrap_wrap">
+
+        <div class="rs-item">
+          <h4>American Self Storage #1</h4>
+          <p>1323 South Broadway<br> Edmond, OK 73034</p>
+
+          <p><a href="tel:+1">1 (405) 340-1905</a></p>
+          <a class="AS2-btn AS2-btn_red" target="_blank" href="">
+                Order Packing Supplies
+          </a>
+        </div>
+
+        </div>
+
+        <h3>Oklahoma City</h3>
+        <div class="flexy fl-wrap_wrap">
+
+        <div class="rs-item">
+          <h4>American Self Storage #2</h4>
+          <p>201 West Memorial Road<br> Oklahoma City, OK 73114</p>
+
+          <p><a href="tel:+1">1 (405) 751-1006</a></p>
+          <a class="AS2-btn AS2-btn_red" target="_blank" href="">
+                Order Packing Supplies
+          </a>
+        </div>
+
+        <div class="rs-item">
+          <h4>American Self Storage #3</h4>
+          <p>4400 North Santa Fe<br> Oklahoma City, OK 73118</p>
+
+          <p><a href="tel:+1">1 (405) 528-6772</a></p>
+          <a class="AS2-btn AS2-btn_red" target="_blank" href="">
+                Order Packing Supplies
+          </a>
+        </div>
+
+        <div class="rs-item">
+          <h4>American Self Storage #7</h4>
+          <p>736 Southwest 89th Street<br> Oklahoma City, OK 73139</p>
+
+          <p><a href="tel:+1">1 (405) 691-3670</a></p>
+          <a class="AS2-btn AS2-btn_red" target="_blank" href="">
+                Order Packing Supplies
+          </a>
+        </div>
+
+        <div class="rs-item">
+          <h4>American Self Storage #8</h4>
+          <p>4900 South Hattie<br> Oklahoma City, OK 73129</p>
+
+          <p><a href="tel:+1">1 (405) 670-6553</a></p>
+          <a class="AS2-btn AS2-btn_red" target="_blank" href="">
+                Order Packing Supplies
+          </a>
+        </div>
+
+        <div class="rs-item">
+          <h4>American Self Storage #9</h4>
+          <p>929 North Meridian<br> Oklahoma City, OK 73107</p>
+
+          <p><a href="tel:+1">1 (405) 942-8227</a></p>
+          <a class="AS2-btn AS2-btn_red" target="_blank" href="">
+                Order Packing Supplies
+          </a>
+        </div>
+
+        <div class="rs-item">
+          <h4>American Self Storage #11</h4>
+          <p>7801 West Hefner Rd.<br> Oklahoma City, OK 73162</p>
+
+          <p><a href="tel:+1">1 (405) 722-8709</a></p>
+          <a class="AS2-btn AS2-btn_red" target="_blank" href="">
+                Order Packing Supplies
+          </a>
+        </div>
+
+        <div class="rs-item">
+          <h4>American Self Storage #12</h4>
+          <p>13330 North Rockwell Avenue<br> Oklahoma City, OK 73142</p>
+
+          <p><a href="tel:+1">1 (405) 721-3579</a></p>
+          <a class="AS2-btn AS2-btn_red" target="_blank" href="">
+                Order Packing Supplies
+          </a>
+        </div>
+
+        <div class="rs-item">
+          <h4>American Self Storage #21</h4>
+          <p>1255 W I-240 Service Road<br> Oklahoma City, OK 73139</p>
+
+          <p><a href="tel:+1">1 (405) 628-9000</a></p>
+          <a class="AS2-btn AS2-btn_red" target="_blank" href="">
+                Order Packing Supplies
+          </a>
+        </div>
+
+        <div class="rs-item">
+          <h4>American Self Storage #22</h4>
+          <p>1221 S. Morgan Rd<br> Oklahoma City, OK 73128</p>
+
+          <p><a href="tel:+1">1 (405) 324-8900</a></p>
+          <a class="AS2-btn AS2-btn_red" target="_blank" href="">
+                Order Packing Supplies
+          </a>
+        </div>
+
+        </div>
+
+        <h3>Midwest City</h3>
+        <div class="flexy fl-wrap_wrap">
+
+        <div class="rs-item">
+          <h4>American Self Storage #4</h4>
+          <p>1301 North Air Depot Blvd.<br> Midwest City, OK 73110</p>
+
+          <p><a href="tel:+1">1 (405) 733-4003</a></p>
+          <a class="AS2-btn AS2-btn_red" target="_blank" href="">
+                Order Packing Supplies
+          </a>
+        </div>
+
+        </div>
+
+        <h3>Norman</h3>
+        <div class="flexy fl-wrap_wrap">
+
+        <div class="rs-item">
+          <h4>American Self Storage #5</h4>
+          <p>2111 East Alameda<br> Norman, OK 73071</p>
+
+          <p><a href="tel:+1">1 (405) 364-2122</a></p>
+          <a class="AS2-btn AS2-btn_red" target="_blank" href="">
+                Order Packing Supplies
+          </a>
+        </div>
+
+        <div class="rs-item">
+          <h4>American Self Storage #6</h4>
+          <p>510 24th Ave. Nw<br> Norman, OK 73069</p>
+
+          <p><a href="tel:+1">1 (405) 364-4807</a></p>
+          <a class="AS2-btn AS2-btn_red" target="_blank" href="">
+                Order Packing Supplies
+          </a>
+        </div>
+
+        </div>
+
+        <h3>Bethany</h3>
+        <div class="flexy fl-wrap_wrap">
+
+        <div class="rs-item">
+          <h4>American Self Storage #10</h4>
+          <p>6800 Northwest 63rd Street<br> Bethany, OK 73008</p>
+
+          <p><a href="tel:+1">1 (405) 721-0764</a></p>
+          <a class="AS2-btn AS2-btn_red" target="_blank" href="">
+                Order Packing Supplies
+          </a>
+        </div>
+
+        </div>
+
+        <h3>Lawton</h3>
+        <div class="flexy fl-wrap_wrap">
+
+        <div class="rs-item">
+          <h4>American Self Storage #13</h4>
+          <p>2411 Southwest Lee Blvd.<br> Lawton, OK 73505</p>
+
+          <p><a href="tel:+1">1 (580) 248-6615</a></p>
+          <a class="AS2-btn AS2-btn_red" target="_blank" href="">
+                Order Packing Supplies
+          </a>
+        </div>
+
+        </div>
+
+        <h3>Wichita</h3>
+        <div class="flexy fl-wrap_wrap">
+
+        <div class="rs-item">
+          <h4>American Self Storage #14</h4>
+          <p>3401 Hillside<br> Wichita, KS 67219</p>
+
+          <p><a href="tel:+1">1 (316) 838-1365</a></p>
+          <a class="AS2-btn AS2-btn_red" target="_blank" href="">
+                Order Packing Supplies
+          </a>
+        </div>
+
+        </div>
+
+        <h3>Shawnee</h3>
+        <div class="flexy fl-wrap_wrap">
+
+        <div class="rs-item">
+          <h4>American Self Storage #16</h4>
+          <p>4131 North Harrison<br> Shawnee, OK 74804</p>
+
+          <p><a href="tel:+1">1 (405) 275-8709</a></p>
+          <a class="AS2-btn AS2-btn_red" target="_blank" href="">
+                Order Packing Supplies
+          </a>
+        </div>
+
+        <div class="rs-item">
+          <h4>American Self Storage #18</h4>
+          <p>25 Ken Del Drive<br> Shawnee, OK 74804</p>
+
+          <p><a href="tel:+1">1 (405) 275-2022</a></p>
+          <a class="AS2-btn AS2-btn_red" target="_blank" href="">
+                Order Packing Supplies
+          </a>
+        </div>
+
+        </div>
+
+        <h3>Tecumseh</h3>
+        <div class="flexy fl-wrap_wrap">
+
+        </div>
+
+        <h3>Yukon</h3>
+        <div class="flexy fl-wrap_wrap">
+
+        <div class="rs-item">
+          <h4>American Self Storage #19</h4>
+          <p>750 South Ranchwood Blvd.<br> Yukon, OK 73099</p>
+
+          <p><a href="tel:+1">1 (405) 350-1511</a></p>
+          <a class="AS2-btn AS2-btn_red" target="_blank" href="">
+                Order Packing Supplies
+          </a>
+        </div>
+
+        </div>
+
+        <h3>Moore</h3>
+        <div class="flexy fl-wrap_wrap">
+
+        <div class="rs-item">
+          <h4>American Self Storage #20</h4>
+          <p>1701 Tower Drive<br> Moore, OK 73160</p>
+
+          <p><a href="tel:+1">1 (405) 895-7204</a></p>
+          <a class="AS2-btn AS2-btn_red" target="_blank" href="">
+                Order Packing Supplies
+          </a>
+        </div>
+
+        </div>
 
     </div>
-  </div>
+</div>
+</div>
+
+</div>
+</div>
 </div>
 
 
