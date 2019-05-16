@@ -131,7 +131,7 @@
                 AS2 Content
 ------------------------------------------->
 
-<div class="as2-content">
+<div class="as2-content" style="color: #032459;">
   <div class="page_center sm">
     <div class="ac-wrap">
       {{ module.content }}
@@ -302,8 +302,8 @@
       </div>
       <div class="ah-access">
         <ul>
-          <li><a href="#">Find Locations</a></li>
-          <li><a href="#">Bill Pay</a></li>
+          <li><a class="cta_button AS2-btn AS2-btn_red" href="#">Find Locations</a></li>
+          <li><a class="cta_button AS2-btn AS2-btn_red" href="#">Bill Pay</a></li>
         </ul>
       </div>
     </div>
@@ -902,6 +902,73 @@
     </div>
     <div id="mf-map" class="mf-map">
         <div id="map"></div>
+    </div>
+  </div>
+</div>
+
+<!-------------------------------------------
+       AS2 Rentals and Supply Providers
+------------------------------------------->
+
+{% set locations = hubdb_table_rows(1027575) %}
+{% set choice = module.for_list_providers %}
+
+{% macro mixList(i) %}
+  {% for item in i|groupby('city') %}
+    <h3>{{ item.grouper }}</h3>
+    <div class="flexy fl-wrap_wrap">
+      {% for item2 in item.list %}
+        {% if choice == "trucks" %}
+          {% if item2.truck_rental_url %}
+            {{ markup(item2) }}
+          {% endif %}
+        {% elif choice == "trailers" %}
+          {% if item2.trailer_rental_url %}
+            {{ markup(item2) }}
+          {% endif %}
+        {% elif choice == "packing_supplies" %}
+          {% if item2.packing_supplies_url %}
+            {{ markup(item2) }}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  {% endfor %}
+{% endmacro %}
+
+{% macro markup(i) %}
+    <div class="rs-item">
+      <h4>{{ i.name }}</h4>
+      <p>{{ i.street }}<br> {{ i.city }}, {{ i.state }} {{ i.zip }}</p>
+      {% set phone = i.phone|list %}
+      <p><a href="tel:+1{{ place.phone }}">
+              {%- for x in phone -%}
+                {{x}}{% if loop.index == 1 %} ({% elif loop.index == 4 %}) {% elif loop.index == 7 %}-{% endif %}
+              {%- endfor -%}
+            </a></p>
+      <a class="AS2-btn AS2-btn_red" target="_blank" href="{% if choice == 'trucks' %}Rent a Truck
+                                                      {% elif choice == 'trailers' %}
+                                                        Rent a trailer
+                                                      {% elif choice == 'packing_supplies' %}
+                                                        {{ item.packing_supplies_url }}
+                                                     {% endif %}">
+          {% if choice == 'trucks' %}
+            Rent a Truck
+          {% elif choice == 'trailers' %}
+            Rent a Trailer
+          {% elif choice == 'packing_supplies' %}
+            Order Packing Supplies
+          {% endif %}
+      </a>
+    </div>
+{% endmacro %}
+
+<div class="rentals-supplies">
+  <div class="page_center lg">
+    <div class="rs-grid">
+
+      {{ mixList(locations) }}
+
     </div>
   </div>
 </div>

@@ -567,6 +567,14 @@ li {
 }
 
 /******************************************/
+/*                AS2 Content             */
+/******************************************/
+
+.as2-content {
+  margin: 80px 100px;
+}
+
+/******************************************/
 /*         AS2 Content and Form           */
 /******************************************/
 
@@ -621,6 +629,42 @@ li {
   .cf-content {
     margin-left: 3vw;
   }
+}
+
+
+/******************************************/
+/*    AS2 Rentals and Supply Providers    */
+/******************************************/
+
+
+.rentals-supplies {
+  margin: 60px 0 100px;
+}
+
+.rs-item {
+  width: 23%;
+  box-sizing: border-box;
+  padding: 2% 2% 2% 2%;
+  margin: 2% 2% 2% 0;
+  background: #999899;
+  color: #fff;
+}
+
+.rs-grid h3 {
+  margin-top: 40px;
+  text-decoration: underline;
+  font-size: 3rem;
+}
+
+.rs-item h4 {
+  font-size: 2em;
+}
+
+.rs-item p,
+.rs-item a {
+  font-size: 1.4rem;
+  color: #fff;
+}{
 }
 
 
